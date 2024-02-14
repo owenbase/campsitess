@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>HiStory Camp</title>
+</head>
+<body>
+    <div class="mprovincee">
+    <div class="container2">
+        
+        <div class="navbar">
+            <img src="../img/logo.png" class="logo">
+
+        <nav>
+            <ul>
+            <li><a href="../homepage.html">Home</a></li>
+            <li><a href="all.html">Campsite</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            </ul>
+            </nav>
+    </div>
+   
+
+        <h1 class="mprovince-title">Kiltepan Campsite Mountain Province </h1>
+    <div class="mprovince-container">
+        
+        <p class="mprovince-content">
+            Embarking on a trek along Stauton Road, near the quaint church and the inviting aroma of Caja restaurant, is not just a physical journey but a passage into the enchanting realm of nature's wonders. This scenic trail, leading to the pinnacle of Kiltepan Peak, promises an immersive experience that transcends the ordinary, inviting intrepid adventurers to witness the magical spectacle of sunrise and the ethereal sea of clouds.</p>
+            <p class="mprovince-content">
+                The journey begins with the first rays of dawn, as the world awakens to the soft hues of morning. Hiking enthusiasts set foot on the trail, guided by the promise of a breathtaking view awaiting them at Kiltepan Peak. The anticipation of witnessing the sun ascend, casting its golden glow upon the landscape, becomes the driving force behind each step taken along the Stauton Road trail.</p>
+            <p class="mprovince-content">
+                As the ascent progresses, the verdant surroundings gradually unfold, revealing the majestic beauty of the forested landscape. Towering trees and lush foliage create a natural canopy that adds an element of serenity to the trek. The symphony of bird calls and rustling leaves becomes a companion, harmonizing with the rhythmic beat of footsteps against the trail.</p>
+            <p class="mprovince-content">
+                Reaching Kiltepan Peak is not just a physical accomplishment; it is a rendezvous with a panoramic vista that transcends the ordinary. The early morning trek ensures that adventurers are greeted with a canvas of colors as the sun gracefully paints the sky with hues of orange, pink, and gold. The sunrise becomes a celestial ballet, a spectacle that transforms the horizon into a masterpiece.</p>
+    <h2>Rates of the Campsite</h2>
+                <p class="mprovince-content">
+
+                </p>
+    <h2>How to go there?</h2>
+                <h3>Manila to Kiltepan Campsite Mountain Province </h3>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1965187.1006216996!2d119.55909231792266!3d15.843133935062728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x3397ca03571ec38b%3A0x69d1d5751069c11f!2sManila%2C%20Metro%20Manila!3m2!1d14.5995124!2d120.9842195!4m5!1s0x338fd3b0d6b77cff%3A0xa9461d90e22fb7b6!2s3WR7%2BX9P%20Kiltepan%20Campsite%2C%20Sagada%2C%20Mountain%20Province!3m2!1d17.0924698!2d120.91345299999999!5e0!3m2!1sen!2sph!4v1705991009305!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            <a href="https://www.google.com/maps/dir/Manila,+Metro+Manila/3WR7%2BX9P+Kiltepan+Campsite,+Sagada,+Mountain+Province/@15.8431339,119.5590923,8z/am=t/data=!4m13!4m12!1m5!1m1!1s0x3397ca03571ec38b:0x69d1d5751069c11f!2m2!1d120.9842195!2d14.5995124!1m5!1m1!1s0x338fd3b0d6b77cff:0xa9461d90e22fb7b6!2m2!1d120.913453!2d17.0924698?hl=en&entry=ttu" class="button">
+                View on Google Maps
+            </a>
+            <h3>Kiltepan Campsite Mountain Province </h3>
+            <div class="roww">
+                <div class="column">
+                    <img src="../img/mprovince.jpg" style="width: 100%">
+                </div>
+                <div class="column">
+                    <img src="../img/mprovince2.jpg" style="width: 100%">
+                </div>
+            <div class="roww">
+                </div><div class="column">
+                    <img src="../img/mprovince1.jpg" style="width: 100%">
+                </div>
+                <div class="column">
+                    <img src="../img/mprovince3.jpg" style="width: 100%">
+                </div>
+            </div>
+            </div>
+            <footer>
+                2024 Google Maps on Website. All rights reserved
+            </footer>
+
+    </div>
+</div>
+</div>
+
+
+    
+<!-- ... Your existing HTML ... -->
+
+<!-- ... Your existing HTML ... -->
+
+<div class="comments-container">
+    <h2>Comments</h2>
+    <form id="commentForm">
+        <label for="commentAuthor">Name:</label>
+        <input type="text" id="commentAuthor" name="commentAuthor" required>
+
+        <label for="commentContent">Comment:</label>
+        <textarea id="commentContent" name="commentContent" rows="4" required></textarea>
+
+        <button type="submit">Post Comment</button>
+    </form>
+
+    <!-- Display Comments -->
+    <div id="comments"></div>
+</div>
+
+<script>
+    document.getElementById("commentForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        // Get values from the form
+        var author = document.getElementById("commentAuthor").value;
+        var content = document.getElementById("commentContent").value;
+
+        // Create a new comment element
+        var commentElement = document.createElement("div");
+        commentElement.className = "comment";
+        commentElement.innerHTML = '<p class="comment-author">' + author + ':</p><p class="comment-content">' + content + '</p>';
+
+        // Append the comment to the comments container
+        document.getElementById("comments").appendChild(commentElement);
+
+        // Clear the form
+        document.getElementById("commentForm").reset();
+    });
+</script>
+
+
+
+    
+    </div>
+</body>
+</html>

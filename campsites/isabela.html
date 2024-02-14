@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>HiStory Camp</title>
+</head>
+<body>
+    <div class="isabelaa">
+    <div class="container2">
+        
+        <div class="navbar">
+            <img src="../img/logo.png" class="logo">
+
+        <nav>
+            <ul>
+            <li><a href="../homepage.html">Home</a></li>
+            <li><a href="all.html">Campsite</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            </ul>
+            </nav>
+    </div>
+   
+
+        <h1 class="isabela-title">Nature's Valley Park and Campground Isabela </h1>
+    <div class="isabela-container">
+        
+        <p class="isabela-content">
+            Step into an enchanting journey into the heart of nature's embrace as we extend a warm invitation to Nature's Valley Park and Campground—a haven where the beauty of the outdoors comes alive, and every moment is an opportunity for adventure and relaxation.</p>
+            <p class="isabela-content">
+                But Nature's Valley is not just a camping destination; it's a gateway to aquatic adventures that beckon water enthusiasts. Dive into the crystal-clear waters of our boating area, where the gentle ripples invite you to set sail on a journey of exploration. Whether you prefer the tranquility of paddleboats or the exhilaration of motorized rides, our boating experiences promise a refreshing escape.</p>
+            <p class="isabela-content">
+                As the sun caresses the landscape, our swimming facilities offer a rejuvenating oasis. Immerse yourself in the inviting waters, feel the cares of the world slip away, and bask in the joy of a leisurely swim. Whether you're a water enthusiast or seeking a respite from the summer heat, our swimming areas are designed to be your aquatic sanctuary.</p>
+            <p class="isabela-content">
+                Nature's Valley Park and Campground is not merely a resort; it's an invitation to savor the delights of the great outdoors. Families, friends, and nature lovers alike are welcomed to a place where camping becomes an art, boating becomes an exploration, and swimming becomes a celebration. </p>
+    <h2>Rates of the Campsite</h2>
+                <p class="isabela-content">
+
+                </p>
+    <h2>How to go there?</h2>
+                <h3>Manila to Nature's Valley Park and Campground Isabela </h3>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1967209.453097428!2d119.7043550844786!3d15.63401698206718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x3397ca03571ec38b%3A0x69d1d5751069c11f!2sManila%2C%20Metro%20Manila!3m2!1d14.5995124!2d120.9842195!4m5!1s0x33900fbeb92ddd69%3A0x44271d47ecd5a809!2sNature&#39;s%20Valley%20Park%20and%20Camp%20Ground%2C%20Cordon%2C%20Isabela!3m2!1d16.6458633!2d121.47236269999999!5e0!3m2!1sen!2sph!4v1705824602823!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            <a href="https://www.google.com/maps/dir/Manila,+Metro+Manila/Nature's+Valley+Park+and+Camp+Ground,+Cordon,+Isabela/@15.634017,119.7043551,8z/am=t/data=!4m13!4m12!1m5!1m1!1s0x3397ca03571ec38b:0x69d1d5751069c11f!2m2!1d120.9842195!2d14.5995124!1m5!1m1!1s0x33900fbeb92ddd69:0x44271d47ecd5a809!2m2!1d121.4723627!2d16.6458633?entry=ttu" class="button">
+                View on Google Maps
+            </a>
+            <h3> Nature's Valley Park and Campground Isabela </h3>
+            <div class="roww">
+                <div class="column">
+                    <img src="../img/isabela.jpeg" style="width: 100%">
+                </div>
+                <div class="column">
+                    <img src="../img/isabela2.jpeg" style="width: 100%">
+                </div>
+            <div class="roww">
+                </div><div class="column">
+                    <img src="../img/isabela1.jpg" style="width: 100%">
+                </div>
+                <div class="column">
+                    <img src="../img/isabela3.jpg" style="width: 100%">
+                </div>
+            </div>
+            </div>
+            <footer>
+                2024 Google Maps on Website. All rights reserved
+            </footer>
+
+    </div>
+</div>
+</div>
+
+
+    
+<!-- ... Your existing HTML ... -->
+
+<!-- ... Your existing HTML ... -->
+
+<div class="comments-container">
+    <h2>Comments</h2>
+    <form id="commentForm">
+        <label for="commentAuthor">Name:</label>
+        <input type="text" id="commentAuthor" name="commentAuthor" required>
+
+        <label for="commentContent">Comment:</label>
+        <textarea id="commentContent" name="commentContent" rows="4" required></textarea>
+
+        <button type="submit">Post Comment</button>
+    </form>
+
+    <!-- Display Comments -->
+    <div id="comments"></div>
+</div>
+
+<script>
+    document.getElementById("commentForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        // Get values from the form
+        var author = document.getElementById("commentAuthor").value;
+        var content = document.getElementById("commentContent").value;
+
+        // Create a new comment element
+        var commentElement = document.createElement("div");
+        commentElement.className = "comment";
+        commentElement.innerHTML = '<p class="comment-author">' + author + ':</p><p class="comment-content">' + content + '</p>';
+
+        // Append the comment to the comments container
+        document.getElementById("comments").appendChild(commentElement);
+
+        // Clear the form
+        document.getElementById("commentForm").reset();
+    });
+</script>
+
+
+
+    
+    </div>
+</body>
+</html>

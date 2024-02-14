@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HiStory Camp</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <form id="login" class="input-group">
+                <input type="text" id="login-username" class="input-field" placeholder="Username" required>
+                <input type="password" id="login-password" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="chec-box"><span>Remember Password</span>
+                <button type="button" class="submit-btn" onclick="checkLogin()">Log In</button>
+            </form>
+
+            <form id="register" class="input-group">
+                <input type="text" id="login-username" class="input-field" placeholder="Username" required>
+                <input type="text" id="email" class="input-field" placeholder="Email" required>
+                <input type="password" id="login-password" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="chec-box"><span>I agree to the terms and conditions</span>
+                <button type="button" class="submit-btn">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function register() {
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+
+        function login() {
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0";
+        }
+
+        function checkLogin() {
+            var username = document.getElementById("login-username").value;
+            var password = document.getElementById("login-password").value;
+
+            // Example admin credentials (replace these with your actual admin credentials)
+            var adminUsername = "admin";
+            var adminPassword = "admin123";
+
+            if (username === adminUsername && password === adminPassword) {
+                // Redirect to the homepage (replace "homepage.html" with the actual URL)
+                window.location.href = "homepage.html";
+            } else {
+                // Add logic here to handle regular user login (validate against a database, etc.)
+                // For now, just redirect to a user page (replace "userpage.html" with the actual URL)
+                return 0;
+            }
+        }
+    </script>
+</body>
+</html>

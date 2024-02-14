@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>HiStory Camp</title>
+</head>
+<body>
+    <div class="marinduquee">
+    <div class="container2">
+        
+        <div class="navbar">
+            <img src="../img/logo.png" class="logo">
+
+        <nav>
+            <ul>
+            <li><a href="../homepage.html">Home</a></li>
+            <li><a href="all.html">Campsite</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            </ul>
+            </nav>
+    </div>
+   
+
+        <h1 class="marinduque-title"> TLP Beach Camp Marinduque </h1>
+    <div class="marinduque-container">
+        
+        <p class="marinduque-content">
+            TLP Beach Camp has become a beacon for travelers seeking refuge from the ordinary. As the sun paints the skies with hues of orange and pink, guests find themselves enchanted by the panoramic views that stretch as far as the eye can see. It's a spectacle that unfolds daily, inviting visitors to pause, breathe, and savor the beauty that nature generously bestows upon this coastal sanctuary.</p>
+            <p class="marinduque-content">
+                For the ardent camper, TLP Beach Camp is a playground of possibilities. From pitching tents on the soft sands to falling asleep to the lullaby of crashing waves, every aspect of the camping experience is elevated against the backdrop of the pristine beach. Under the starlit canopy, campfires glow, stories are shared, and connections are forged—a ritual that transcends the ordinary and transforms each visit into an immersive adventure.</p>
+            <p class="marinduque-content">
+                Beyond the allure of camping, TLP Beach Camp offers an array of activities that cater to various tastes. Whether it's engaging in water sports, basking in the sun on the sandy shores, or exploring the coastal wonders, every moment becomes an opportunity for rejuvenation and recreation.</p>
+            <p class="marinduque-content">
+                What sets TLP Beach Camp apart is not just its scenic beauty or the myriad of activities; it's the sense of community and warmth that envelops visitors. It's a place where strangers become friends, and where the camaraderie of shared experiences creates a tapestry of memories that linger long after the journey home. </p>
+    <h2>Rates of the Campsite</h2>
+                <p class="marinduque-content">
+
+                </p>
+    <h2></h2>
+                <h3> Location of the campsite</h3>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15520.053025690348!2d121.81890322767502!3d13.473280407550241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a327c6161cda7d%3A0x33442941f97e93db!2sTLP%20Beach%20Camp!5e0!3m2!1sen!2sph!4v1705989418481!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            <a href="https://www.google.com/maps/place/TLP+Beach+Camp/@13.4732804,121.8189032,15z/data=!3m1!4b1!4m6!3m5!1s0x33a327c6161cda7d:0x33442941f97e93db!8m2!3d13.47326!4d121.829203!16s%2Fg%2F11ggsks922?hl=en&entry=ttu" class="button">
+                View on Google Maps
+            </a>
+            <h3>TLP Beach Camp Marinduque </h3>
+            <div class="roww">
+                <div class="column">
+                    <img src="../img/marinduque.jpg" style="width: 100%">
+                </div>
+                <div class="column">
+                    <img src="../img/marinduque1.jpg" style="width: 100%">
+                </div>
+            <div class="roww">
+                </div><div class="column">
+                    <img src="../img/marinduque2.jpg" style="width: 100%">
+                </div>
+                <div class="column">
+                    <img src="../img/marinduque3.jpg" style="width: 100%">
+                </div>
+            </div>
+            </div>
+            <footer>
+                2024 Google Maps on Website. All rights reserved
+            </footer>
+
+    </div>
+</div>
+</div>
+
+
+    
+<!-- ... Your existing HTML ... -->
+
+<!-- ... Your existing HTML ... -->
+
+<div class="comments-container">
+    <h2>Comments</h2>
+    <form id="commentForm">
+        <label for="commentAuthor">Name:</label>
+        <input type="text" id="commentAuthor" name="commentAuthor" required>
+
+        <label for="commentContent">Comment:</label>
+        <textarea id="commentContent" name="commentContent" rows="4" required></textarea>
+
+        <button type="submit">Post Comment</button>
+    </form>
+
+    <!-- Display Comments -->
+    <div id="comments"></div>
+</div>
+
+<script>
+    document.getElementById("commentForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        // Get values from the form
+        var author = document.getElementById("commentAuthor").value;
+        var content = document.getElementById("commentContent").value;
+
+        // Create a new comment element
+        var commentElement = document.createElement("div");
+        commentElement.className = "comment";
+        commentElement.innerHTML = '<p class="comment-author">' + author + ':</p><p class="comment-content">' + content + '</p>';
+
+        // Append the comment to the comments container
+        document.getElementById("comments").appendChild(commentElement);
+
+        // Clear the form
+        document.getElementById("commentForm").reset();
+    });
+</script>
+
+
+
+    
+    </div>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>HiStory Camp</title>
+</head>
+<body>
+    <div class="ilocoss">
+    <div class="container2">
+        
+        <div class="navbar">
+            <img src="../img/logo.png" class="logo">
+
+        <nav>
+            <ul>
+            <li><a href="../homepage.html">Home</a></li>
+            <li><a href="all.html">Campsite</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            </ul>
+            </nav>
+    </div>
+   
+
+        <h1 class="ilocos-title">Sitio Aprot Park Ilocos </h1>
+    <div class="ilocos-container">
+        
+        <p class="ilocos-content">
+            Sitio Aprot Park, with its sprawling greenery and unspoiled surroundings, presents an invitation to rediscover the joys of the great outdoors. Whether you're a nature enthusiast, a family in search of a peaceful retreat, or a group of friends seeking a new adventure, our park is a canvas for creating cherished memories.</p>
+            <p class="ilocos-content">
+                The allure of Sitio Aprot Park lies in its versatility. Picture yourself strolling along winding trails, the gentle rustle of leaves overhead and the crisp scent of the earth underfoot. Here, nature becomes both a sanctuary and a playground, inviting you to unwind, explore, and connect with the simplicity of the natural world.</p>
+            <p class="ilocos-content">
+                For the adventurous souls, the park offers a myriad of activities that promise an adrenaline rush and a sense of accomplishment. From trekking through scenic trails to engaging in thrilling outdoor games, every corner of Sitio Aprot Park becomes a stage for adventure and discovery.</p>
+            <p class="ilocos-content">
+                As the sun sets, the park transforms into a serene haven, offering quiet spaces for reflection and moments of tranquility. Gather around a bonfire, share stories under the stars, and let the soothing sounds of nature lull you into a state of relaxation. </p>
+    <h2>Rates of the Campsite</h2>
+                <p class="ilocos-content">
+
+                </p>
+    <h2>How to go there?</h2>
+                <h3>Manila to Sitio Aprot Park Ilocos </h3>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d3915417.911408437!2d118.01612650434654!3d16.59410074768085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x3397ca03571ec38b%3A0x69d1d5751069c11f!2sManila%2C%20Metro%20Manila!3m2!1d14.5995124!2d120.9842195!4m5!1s0x338923628051f887%3A0x26c7dc8d3ed291dd!2sSitio%20Aprot%20Park%2C%20Unnamed%20Road%2C%20Pagudpud%2C%20Ilocos%20Norte!3m2!1d18.614518!2d120.78320099999999!5e0!3m2!1sen!2sph!4v1705823999971!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            <a href="https://www.google.com/maps/dir/Manila,+Metro+Manila/Sitio+Aprot+Park,+Unnamed+Road,+Pagudpud,+Ilocos+Norte/@16.5941007,118.0161265,7z/am=t/data=!4m13!4m12!1m5!1m1!1s0x3397ca03571ec38b:0x69d1d5751069c11f!2m2!1d120.9842195!2d14.5995124!1m5!1m1!1s0x338923628051f887:0x26c7dc8d3ed291dd!2m2!1d120.783201!2d18.614518?entry=ttu" class="button">
+                View on Google Maps
+            </a>
+            <h3> Sitio Aprot Park Ilocos </h3>
+            <div class="roww">
+                <div class="column">
+                    <img src="../img/ilocos.jpg" style="width: 100%">
+                </div>
+                <div class="column">
+                    <img src="../img/ilocos1.JPG" style="width: 100%">
+                </div>
+            <div class="roww">
+                </div><div class="column">
+                    <img src="../img/ilocos2.jpg" style="width: 100%">
+                </div>
+                <div class="column">
+                    <img src="../img/ilocos3.jpg" style="width: 100%">
+                </div>
+            </div>
+            </div>
+            <footer>
+                2024 Google Maps on Website. All rights reserved
+            </footer>
+
+    </div>
+</div>
+</div>
+
+
+    
+<!-- ... Your existing HTML ... -->
+
+<!-- ... Your existing HTML ... -->
+
+<div class="comments-container">
+    <h2>Comments</h2>
+    <form id="commentForm">
+        <label for="commentAuthor">Name:</label>
+        <input type="text" id="commentAuthor" name="commentAuthor" required>
+
+        <label for="commentContent">Comment:</label>
+        <textarea id="commentContent" name="commentContent" rows="4" required></textarea>
+
+        <button type="submit">Post Comment</button>
+    </form>
+
+    <!-- Display Comments -->
+    <div id="comments"></div>
+</div>
+
+<script>
+    document.getElementById("commentForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        // Get values from the form
+        var author = document.getElementById("commentAuthor").value;
+        var content = document.getElementById("commentContent").value;
+
+        // Create a new comment element
+        var commentElement = document.createElement("div");
+        commentElement.className = "comment";
+        commentElement.innerHTML = '<p class="comment-author">' + author + ':</p><p class="comment-content">' + content + '</p>';
+
+        // Append the comment to the comments container
+        document.getElementById("comments").appendChild(commentElement);
+
+        // Clear the form
+        document.getElementById("commentForm").reset();
+    });
+</script>
+
+
+
+    
+    </div>
+</body>
+</html>

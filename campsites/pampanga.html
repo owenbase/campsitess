@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>HiStory Camp</title>
+</head>
+<body>
+    <div class="pampangaa">
+    <div class="container2">
+        
+        <div class="navbar">
+            <img src="../img/logo.png" class="logo">
+
+        <nav>
+            <ul>
+            <li><a href="../homepage.html">Home</a></li>
+            <li><a href="all.html">Campsite</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            </ul>
+            </nav>
+    </div>
+   
+
+        <h1 class="pampanga-title"> Camp Sheva Pampanga </h1>
+    <div class="pampanga-container">
+        
+        <p class="pampanga-content">
+            Welcome to Camp Sheva, where every corner is a canvas of adventure, connection, and serenity. Nestled in the embrace of nature, Camp Sheva beckons seekers of the extraordinary—a haven where the soul finds solace, and the spirit of camaraderie flourishes.</p>
+            <p class="pampanga-content">
+                As you step into Camp Sheva, be prepared to embark on a journey that transcends the ordinary. Our camp is not just a destination; it's a vibrant tapestry of experiences woven into the fabric of the great outdoors. The name "Sheva" resonates with the essence of abundance and joy, and that's precisely what awaits you here.</p>
+            <p class="pampanga-content">
+                Enveloped by the natural beauty that surrounds us, Camp Sheva is a sanctuary for those yearning to connect with the earth beneath their feet and the skies above. Our grounds are more than a campsite; they are a canvas for adventures waiting to unfold, where every trail leads to discovery, and every vista offers a moment of awe.</p>
+            <p class="pampanga-content">
+                At Camp Sheva, the camaraderie of shared experiences becomes the heartbeat of our community. Whether you gather around a crackling campfire under the starlit sky, traverse the winding trails together, or simply revel in the quietude of nature, each moment is an opportunity to forge connections that echo the laughter and joy of like-minded spirits.</p>
+    <h2>Rates of the Campsite</h2>
+                <p class="pampanga-content">
+
+                </p>
+    <h2>How to go there?</h2>
+                <h3>Manila to Camp Sheva Pampanga </h3>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d493483.51793453295!2d120.47539941747563!3d14.918140090660032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x3397ca03571ec38b%3A0x69d1d5751069c11f!2sManila%2C%20Metro%20Manila!3m2!1d14.5995124!2d120.9842195!4m5!1s0x3396e58f7f97866b%3A0xd58be9ff8240831e!2sCamp%20Sheva&#39;%2C%20Brgy%20Road%2C%20Magalang!3m2!1d15.2312672!2d120.718862!5e0!3m2!1sen!2sph!4v1706500263142!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            <a href="https://www.google.com/maps/dir/Manila,+Metro+Manila/Camp+Sheva',+Brgy+Road,+Magalang/@14.9181401,120.4753994,10z/am=t/data=!4m13!4m12!1m5!1m1!1s0x3397ca03571ec38b:0x69d1d5751069c11f!2m2!1d120.9842195!2d14.5995124!1m5!1m1!1s0x3396e58f7f97866b:0xd58be9ff8240831e!2m2!1d120.718862!2d15.2312672?hl=en&entry=ttu" class="button">
+                View on Google Maps
+            </a>
+            <h3>Camp Sheva Pampanga</h3>
+            <div class="roww">
+                <div class="column">
+                    <img src="../img/pampanga2.jpg" style="width: 100%">
+                </div>
+                <div class="column">
+                    <img src="../img/pampanga3.jpg" style="width: 100%">
+                </div>
+            <div class="roww">
+                </div><div class="column">
+                    <img src="../img/pampanga1.jpg" style="width: 100%">
+                </div>
+                <div class="column">
+                    <img src="../img/pampanga.jpg" style="width: 100%">
+                </div>
+            </div>
+            </div>
+            <footer>
+                2024 Google Maps on Website. All rights reserved
+            </footer>
+
+    </div>
+</div>
+</div>
+
+
+    
+<!-- ... Your existing HTML ... -->
+
+<!-- ... Your existing HTML ... -->
+
+<div class="comments-container">
+    <h2>Comments</h2>
+    <form id="commentForm">
+        <label for="commentAuthor">Name:</label>
+        <input type="text" id="commentAuthor" name="commentAuthor" required>
+
+        <label for="commentContent">Comment:</label>
+        <textarea id="commentContent" name="commentContent" rows="4" required></textarea>
+
+        <button type="submit">Post Comment</button>
+    </form>
+
+    <!-- Display Comments -->
+    <div id="comments"></div>
+</div>
+
+<script>
+    document.getElementById("commentForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        // Get values from the form
+        var author = document.getElementById("commentAuthor").value;
+        var content = document.getElementById("commentContent").value;
+
+        // Create a new comment element
+        var commentElement = document.createElement("div");
+        commentElement.className = "comment";
+        commentElement.innerHTML = '<p class="comment-author">' + author + ':</p><p class="comment-content">' + content + '</p>';
+
+        // Append the comment to the comments container
+        document.getElementById("comments").appendChild(commentElement);
+
+        // Clear the form
+        document.getElementById("commentForm").reset();
+    });
+</script>
+
+
+
+    
+    </div>
+</body>
+</html>

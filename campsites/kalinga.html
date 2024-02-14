@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>HiStory Camp</title>
+</head>
+<body>
+    <div class="kalingaa">
+    <div class="container2">
+        
+        <div class="navbar">
+            <img src="../img/logo.png" class="logo">
+
+        <nav>
+            <ul>
+            <li><a href="../homepage.html">Home</a></li>
+            <li><a href="all.html">Campsite</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            </ul>
+            </nav>
+    </div>
+   
+
+        <h1 class="kalinga-title"> Mt. Canaan Kalinga </h1>
+    <div class="kalinga-container">
+        
+        <p class="kalinga-content">
+            The Freedom Mountain, with its majestic presence, stands as an open invitation to those yearning for an escape from the ordinary. As you ascend its slopes, breathe in the crisp mountain air, and witness the breathtaking panoramas, you'll discover that this is not merely a climb but a passage to newfound freedom.</p>
+            <p class="kalinga-content">
+                Picture yourself standing at the summit, where the world unfolds beneath you, and the vastness of the landscape evokes a sense of boundless possibility. The journey to the top is not just a physical ascent but a liberating experience that transcends the constraints of everyday life.</p>
+            <p class="kalinga-content">
+                Mt. Canaan, aptly named as The Freedom Mountain, represents the essence of exploration and self-discovery. Each step taken on its trails is a stride towards personal liberation—a chance to break free from the routines that tether us and embrace the uncharted paths that lead to exhilarating vistas.</p>
+            <p class="kalinga-content">
+                For the avid adventurer, The Freedom Mountain offers an unparalleled playground. Navigate through winding trails, traverse rocky terrains, and relish the challenges that come with conquering its peaks. It's a call to those who seek the thrill of the climb and the liberation that comes with reaching new heights.The Freedom Mountain is not just a destination; it's an invitation to experience nature's untamed beauty and reconnect with the untapped potential within. Whether you're a seasoned mountaineer or a first-time explorer, this mountain welcomes you to a world where the pursuit of freedom intertwines seamlessly with the grandeur of the natural landscape. </p>
+    <h2>Rates of the Campsite</h2>
+                <p class="kalinga-content">
+
+                </p>
+    <h2>How to go there?</h2>
+                <h3>Manila to Mt. Canaan Kalinga </h3>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1964556.038604477!2d119.5590929217291!3d15.90783903542893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x3397ca03571ec38b%3A0x69d1d5751069c11f!2sManila%2C%20Metro%20Manila!3m2!1d14.5995124!2d120.9842195!4m5!1s0x338fc70047d29667%3A0xf542ad1ab8f79e9b!2sMt.%20Canaan%2C%20Buscalan%2C%20Tinglayan%2C%20Kalinga!3m2!1d17.221910899999997!2d121.086264!5e0!3m2!1sen!2sph!4v1705838534293!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            <a href="https://www.google.com/maps/dir/Manila,+Metro+Manila/Mt.+Canaan,+Buscalan,+Tinglayan,+Kalinga/@15.907839,119.5590929,8z/data=!4m13!4m12!1m5!1m1!1s0x3397ca03571ec38b:0x69d1d5751069c11f!2m2!1d120.9842195!2d14.5995124!1m5!1m1!1s0x338fc70047d29667:0xf542ad1ab8f79e9b!2m2!1d121.086264!2d17.2219109?entry=ttu" class="button">
+                View on Google Maps
+            </a>
+            <h3>Mt. Canaan Kalinga </h3>
+            <div class="roww">
+                <div class="column">
+                    <img src="../img/kalinga.jpg" style="width: 100%">
+                </div>
+                <div class="column">
+                    <img src="../img/kalinga2.jpeg" style="width: 100%">
+                </div>
+            <div class="roww">
+                </div><div class="column">
+                    <img src="../img/kalinga1.jpeg" style="width: 100%">
+                </div>
+                <div class="column">
+                    <img src="../img/kalinga3.jpg" style="width: 100%">
+                </div>
+            </div>
+            </div>
+            <footer>
+                2024 Google Maps on Website. All rights reserved
+            </footer>
+
+    </div>
+</div>
+</div>
+
+
+    
+<!-- ... Your existing HTML ... -->
+
+<!-- ... Your existing HTML ... -->
+
+<div class="comments-container">
+    <h2>Comments</h2>
+    <form id="commentForm">
+        <label for="commentAuthor">Name:</label>
+        <input type="text" id="commentAuthor" name="commentAuthor" required>
+
+        <label for="commentContent">Comment:</label>
+        <textarea id="commentContent" name="commentContent" rows="4" required></textarea>
+
+        <button type="submit">Post Comment</button>
+    </form>
+
+    <!-- Display Comments -->
+    <div id="comments"></div>
+</div>
+
+<script>
+    document.getElementById("commentForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        // Get values from the form
+        var author = document.getElementById("commentAuthor").value;
+        var content = document.getElementById("commentContent").value;
+
+        // Create a new comment element
+        var commentElement = document.createElement("div");
+        commentElement.className = "comment";
+        commentElement.innerHTML = '<p class="comment-author">' + author + ':</p><p class="comment-content">' + content + '</p>';
+
+        // Append the comment to the comments container
+        document.getElementById("comments").appendChild(commentElement);
+
+        // Clear the form
+        document.getElementById("commentForm").reset();
+    });
+</script>
+
+
+
+    
+    </div>
+</body>
+</html>

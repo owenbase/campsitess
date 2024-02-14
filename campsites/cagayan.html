@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>HiStory Camp</title>
+</head>
+<body>
+    <div class="cagayann">
+    <div class="container2">
+        
+        <div class="navbar">
+            <img src="../img/logo.png" class="logo">
+
+        <nav>
+            <ul>
+            <li><a href="../homepage.html">Home</a></li>
+            <li><a href="all.html">Campsite</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            </ul>
+            </nav>
+    </div>
+   
+
+        <h1 class="cagayan-title">Punta Verde Cagayan</h1>
+    <div class="cagayan-container">
+        
+        <p class="cagayan-content">
+            Punta Verde reveals its splendor through a white sand beach, where the gentle lull of light blue waters invites you to a scene straight out of a dream. It's a place where every corner is a canvas for perfect snapshots, creating timeless memories against the backdrop of pristine nature. While it may not be a designated swimming beach, the sight of boats docking adds a touch of coastal charm to the panoramic views.
+           </p>
+            <p class="cagayan-content">
+                Beyond the sun-kissed shores, Punta Verde invites adventurous souls to explore the hidden treasures within its village. A local boatman, our guide to this paradise, shared the secret of a falls tucked away in the heart of the village. To reach this hidden gem, a guide from the community becomes your key to unlocking the secrets of Punta Verde.</p>
+            <p class="cagayan-content">
+                Take a trek into the heart of Punta Verde, guided by the warmth and hospitality of the locals. Our guide, a young girl, led us through the lush terrain, unraveling the natural wonders that make this village truly enchanting. To secure the guidance of these knowledgeable locals, a nominal fee of Php300 was required, ensuring not only your safe passage but also contributing to the livelihood of the community.</p>
+            <p class="cagayan-content">
+                As you navigate the trails to the falls, you'll find yourself immersed in the untouched beauty of Punta Verde. The gushing waters, the vibrant flora, and the tranquility of the surroundings create a tapestry of experiences that transcends the ordinary.Punta Verde extends an invitation to explorers, adventurers, and those seeking solace in nature's embrace. It's a call to discover the hidden treasures of this coastal haven and forge connections with the heart and soul of Cagayan. Uncover the secrets of Punta Verde, where every step is a journey into the beauty that lies just beyond the beaten path. Your adventure awaits in the serenity of Punta Verde, a place where nature's wonders unfold in the company of welcoming locals and the gentle whispers of the sea breeze.</p>
+    <h2>Rates of the Campsite</h2>
+                <p class="cagayan-content">
+
+                </p>
+    <h2></h2>
+                <h3></h3>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.6498435840845!2d122.15037907386002!3d18.5447190684388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3386456db6879b07%3A0xa12f0795b70e32e!2sPunta%20Verde!5e0!3m2!1sen!2sph!4v1705813938533!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            <a href="https://www.google.com/maps/place/Punta+Verde/@18.5447191,122.1503791,17z/data=!4m14!1m7!3m6!1s0x3386456db6879b07:0xa12f0795b70e32e!2sPunta+Verde!8m2!3d18.544714!4d122.152954!16s%2Fg%2F11h1s26czq!3m5!1s0x3386456db6879b07:0xa12f0795b70e32e!8m2!3d18.544714!4d122.152954!16s%2Fg%2F11h1s26czq?entry=ttu" class="button">
+                View on Google Maps
+            </a>
+            <h3> Punta Verde Cagayan</h3>
+            <div class="roww">
+                <div class="column">
+                  <img src="../img/cagayan.jpg"style="width:100%">
+                </div>
+                <div class="column">
+                  <img src="../img/cagayan1.jpg"  style="width:100%">
+                </div>
+                <div class="column">
+                  <img src="../img/cagayan2.jpg"  style="width:100%">
+                </div>
+                <div class="column">
+                    <img src="../img/cagayan3.jpg"  style="width:100%">
+                  </div>
+              </div>
+            <footer>
+                2024 Google Maps on Website. All rights reserved
+            </footer>
+
+    </div>
+</div>
+</div>
+
+
+    
+<!-- ... Your existing HTML ... -->
+
+<!-- ... Your existing HTML ... -->
+
+<div class="comments-container">
+    <h2>Comments</h2>
+    <form id="commentForm">
+        <label for="commentAuthor">Name:</label>
+        <input type="text" id="commentAuthor" name="commentAuthor" required>
+
+        <label for="commentContent">Comment:</label>
+        <textarea id="commentContent" name="commentContent" rows="4" required></textarea>
+
+        <button type="submit">Post Comment</button>
+    </form>
+
+    <!-- Display Comments -->
+    <div id="comments"></div>
+</div>
+
+<script>
+    document.getElementById("commentForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        // Get values from the form
+        var author = document.getElementById("commentAuthor").value;
+        var content = document.getElementById("commentContent").value;
+
+        // Create a new comment element
+        var commentElement = document.createElement("div");
+        commentElement.className = "comment";
+        commentElement.innerHTML = '<p class="comment-author">' + author + ':</p><p class="comment-content">' + content + '</p>';
+
+        // Append the comment to the comments container
+        document.getElementById("comments").appendChild(commentElement);
+
+        // Clear the form
+        document.getElementById("commentForm").reset();
+    });
+</script>
+
+
+
+    
+    </div>
+</body>
+</html>

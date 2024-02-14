@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>HiStory Camp</title>
+</head>
+<body>
+    <div class="masbatee">
+    <div class="container2">
+        
+        <div class="navbar">
+            <img src="../img/logo.png" class="logo">
+
+        <nav>
+            <ul>
+            <li><a href="../homepage.html">Home</a></li>
+            <li><a href="all.html">Campsite</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            </ul>
+            </nav>
+    </div>
+   
+
+        <h1 class="masbate-title"> Mayong-Payong Mountain Peak Park Masbate </h1>
+    <div class="masbate-container">
+        
+        <p class="masbate-content">
+            The journey to Mayong-Payong Mountain Peak Park is not merely a physical voyage; it is a soul-stirring expedition that unfolds against the backdrop of rolling hills and lush foliage. As visitors ascend the trails, each step becomes a stride towards serenity, and the verdant surroundings become a canvas for the merging of natural beauty and human connection.</p>
+            <p class="masbate-content">
+                Camping in Mayong-Payong Mountain Peak Park is an immersive experience—a chance to escape the ordinary and embrace the extraordinary. The expansive camping grounds, adorned with verdant meadows, offer an ideal setting for pitching tents, creating a temporary abode where the simplicity of outdoor living meets the grandeur of nature.</p>
+            <p class="masbate-content">
+                As the sun dips below the horizon, the magic of Mayong-Payong comes alive. Campfires flicker, casting a warm glow on the faces of those gathered around. Stories are shared, laughter resonates through the night, and a sense of camaraderie blossoms—a nightly ritual that transcends the ordinary and transforms strangers into companions bound by the shared experience of the mountain retreat.</p>
+            <p class="masbate-content">
+                For the avid adventurer, Mayong-Payong Mountain Peak Park presents a myriad of opportunities to explore its natural wonders. Whether it's traversing winding trails that lead to hidden gems, gazing upon the expansive vistas from the peak, or reveling in the thrill of discovering the diverse flora and fauna, every moment becomes an adventure waiting to unfold. </p>
+    <h2>Rates of the Campsite</h2>
+                <p class="masbate-content">
+
+                </p>
+    <h2>How to go there?</h2>
+                <h3>Manila to Mayong-Payong Mountain Peak Park Masbate </h3>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1986617.7368118812!2d120.99846187719652!3d13.467145670536697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x3397ca03571ec38b%3A0x69d1d5751069c11f!2sManila%2C%20Metro%20Manila!3m2!1d14.5995124!2d120.9842195!4m5!1s0x33a6ddc036d1d97f%3A0xe36e036d35484859!2s8JGP%2B3RG%20Mayong%20Payong%2C%20Mobo%2C%20Masbate!3m2!1d12.3251999!2d123.63708369999999!5e0!3m2!1sen!2sph!4v1705990220413!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            <a href="https://www.google.com/maps/dir/Manila,+Metro+Manila/8JGP%2B3RG+Mayong+Payong,+Mobo,+Masbate/@13.4671457,120.9984619,8z/data=!4m13!4m12!1m5!1m1!1s0x3397ca03571ec38b:0x69d1d5751069c11f!2m2!1d120.9842195!2d14.5995124!1m5!1m1!1s0x33a6ddc036d1d97f:0xe36e036d35484859!2m2!1d123.6370837!2d12.3251999?entry=ttu" class="button">
+                View on Google Maps
+            </a>
+            <h3>Mayong-Payong Mountain Peak Park Masbate </h3>
+            <div class="roww">
+                <div class="column">
+                    <img src="../img/masbate.jpg" style="width: 100%">
+                </div>
+                <div class="column">
+                    <img src="../img/masbate1.jpg" style="width: 100%">
+                </div>
+            <div class="roww">
+                </div><div class="column">
+                    <img src="../img/masbate2.jpg" style="width: 100%">
+                </div>
+                <div class="column">
+                    <img src="../img/masbate3.jpg" style="width: 100%">
+                </div>
+            </div>
+            </div>
+            <footer>
+                2024 Google Maps on Website. All rights reserved
+            </footer>
+
+    </div>
+</div>
+</div>
+
+
+    
+<!-- ... Your existing HTML ... -->
+
+<!-- ... Your existing HTML ... -->
+
+<div class="comments-container">
+    <h2>Comments</h2>
+    <form id="commentForm">
+        <label for="commentAuthor">Name:</label>
+        <input type="text" id="commentAuthor" name="commentAuthor" required>
+
+        <label for="commentContent">Comment:</label>
+        <textarea id="commentContent" name="commentContent" rows="4" required></textarea>
+
+        <button type="submit">Post Comment</button>
+    </form>
+
+    <!-- Display Comments -->
+    <div id="comments"></div>
+</div>
+
+<script>
+    document.getElementById("commentForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        // Get values from the form
+        var author = document.getElementById("commentAuthor").value;
+        var content = document.getElementById("commentContent").value;
+
+        // Create a new comment element
+        var commentElement = document.createElement("div");
+        commentElement.className = "comment";
+        commentElement.innerHTML = '<p class="comment-author">' + author + ':</p><p class="comment-content">' + content + '</p>';
+
+        // Append the comment to the comments container
+        document.getElementById("comments").appendChild(commentElement);
+
+        // Clear the form
+        document.getElementById("commentForm").reset();
+    });
+</script>
+
+
+
+    
+    </div>
+</body>
+</html>

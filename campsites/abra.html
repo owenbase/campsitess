@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>HiStory Camp</title>
+</head>
+<body>
+    <div class="all">
+    <div class="container2">
+        
+        <div class="navbar">
+            <img src="../img/logo.png" class="logo">
+
+        <nav>
+            <ul>
+            <li><a href="../homepage.html">Home</a></li>
+            <li><a href="all.html">Campsite</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            </ul>
+            </nav>
+    </div>
+   
+
+        <h1 class="abra-title"> Rancho Daguio Abra </h1>
+    <div class="abra-container">
+        
+        <p class="abra-content">
+            I am excited to extend a warm invitation to each and every one of you for an unforgettable experience at Rancho Daguio Campsite. We have planned an exciting event that combines the best of both worlds—a team-building retreat and a family vacation.
+            <p class="abra-content">
+            Nestled amidst the breathtaking landscapes of the Philippines, Rancho Daguio offers a perfect blend of adventure and relaxation. Surrounded by lush greenery and majestic mountains, this campsite provides an ideal setting for us to come together as a team and create lasting memories with our loved ones.</p>
+            <p class="abra-content">
+            The team-building activities are designed to foster camaraderie, teamwork, and a sense of adventure. From challenging outdoor exercises to fun-filled group games, there will be opportunities for everyone to contribute their unique strengths and build stronger connections with colleagues and family members alike.</p>
+            <p class="abra-content">
+            Moreover, Rancho Daguio's serene ambiance makes it an ideal escape from the hustle and bustle of daily life. Imagine waking up to the crisp mountain air, enjoying delicious meals under the open sky, and creating cherished moments around the campfire. This is a chance to unwind, recharge, and bond with family members in a setting that celebrates the beauty of nature.
+    <h2>Rates of the Campsite</h2>
+                <p class="abra-content">
+
+                </p>
+    <h2>How to go there?</h2>
+                <h3>Manila to Rancgo Daguio Abra</h3>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d3925274.8748042686!2d118.01601003501413!3d16.103004560088298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x3397ca03571ec38b%3A0x69d1d5751069c11f!2sManila%2C%20Metro%20Manila!3m2!1d14.5995124!2d120.9842195!4m5!1s0x338e55a753e72675%3A0x3a9e45482c8803e9!2sRancho%20Daguio%2C%20HV6F%2BJCW%2C%20Licuan-Baay%2C%20Abra!3m2!1d17.5616242!2d120.8735937!5e0!3m2!1sen!2sph!4v1705798321316!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            <a href="https://www.google.com/maps/dir/Manila,+Metro+Manila/Rancho+Daguio,+HV6F%2BJCW,+Licuan-Baay,+Abra/@16.1030046,118.01601,7z/am=t/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x3397ca03571ec38b:0x69d1d5751069c11f!2m2!1d120.9842195!2d14.5995124!1m5!1m1!1s0x338e55a753e72675:0x3a9e45482c8803e9!2m2!1d120.8735937!2d17.5616242?entry=ttu" class="button">
+                View on Google Maps
+            </a>
+            <h3> Rancho Daguio</h3>
+            <div class="roww">
+                <div class="column">
+                  <img src="../img/abra.jpeg"style="width:100%">
+                </div>
+                <div class="column">
+                  <img src="../img/abra1.jpg"  style="width:100%">
+                </div>
+                <div class="column">
+                  <img src="../img/abra2.jpg"  style="width:100%">
+                </div>
+                <div class="column">
+                    <img src="../img/abra3.jpg"  style="width:100%">
+                  </div>
+              </div>
+            <footer>
+                2024 Google Maps on Website. All rights reserved
+            </footer>
+
+    </div>
+</div>
+</div>
+
+
+    
+<!-- ... Your existing HTML ... -->
+
+<!-- ... Your existing HTML ... -->
+
+<div class="comments-container">
+    <h2>Comments</h2>
+    <form id="commentForm">
+        <label for="commentAuthor">Name:</label>
+        <input type="text" id="commentAuthor" name="commentAuthor" required>
+
+        <label for="commentContent">Comment:</label>
+        <textarea id="commentContent" name="commentContent" rows="4" required></textarea>
+
+        <button type="submit">Post Comment</button>
+    </form>
+
+    <!-- Display Comments -->
+    <div id="comments"></div>
+</div>
+
+<script>
+    document.getElementById("commentForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        // Get values from the form
+        var author = document.getElementById("commentAuthor").value;
+        var content = document.getElementById("commentContent").value;
+
+        // Create a new comment element
+        var commentElement = document.createElement("div");
+        commentElement.className = "comment";
+        commentElement.innerHTML = '<p class="comment-author">' + author + ':</p><p class="comment-content">' + content + '</p>';
+
+        // Append the comment to the comments container
+        document.getElementById("comments").appendChild(commentElement);
+
+        // Clear the form
+        document.getElementById("commentForm").reset();
+    });
+</script>
+
+
+
+    
+    </div>
+</body>
+</html>

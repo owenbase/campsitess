@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>HiStory Camp</title>
+</head>
+<body>
+    <div class="auroraa">
+    <div class="container2">
+        
+        <div class="navbar">
+            <img src="../img/logo.png" class="logo">
+
+        <nav>
+            <ul>
+            <li><a href="../homepage.html">Home</a></li>
+            <li><a href="all.html">Campsite</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            </ul>
+            </nav>
+    </div>
+   
+
+        <h1 class="aurora-title"> Windyhill Agritourism Park Aurora </h1>
+    <div class="aurora-container">
+        
+        <p class="aurora-content">
+            At Windyhill, we believe that every moment of your vacation should be a delightful experience, and we want to provide you with a sneak peek into the beauty that awaits you. Picture yourself surrounded by nature's embrace, where the gentle rustle of leaves and the soothing melodies of the wind create a symphony of serenity. Our place is not just a destination; it's a sanctuary where time slows down, and worries gently fade away.
+           </p>
+            <p class="aurora-content">
+                As you explore the preview of Windyhill, envision the cozy retreats that await you – from charming accommodations to scenic landscapes that beckon you to unwind and appreciate the simplicity of life. Our commitment is to make sure that the time and budget you have chosen to spend with us are not just well spent but are moments that linger in your memory.</p>
+            <p class="aurora-content">
+                We take pride in crafting an experience that transcends expectations, where each detail is thoughtfully curated to contribute to your overall sense of well-being. From the warmth of our hospitality to the breathtaking vistas that unfold before you, every aspect of Windyhill is designed to make your vacation truly exceptional.</p>
+            <p class="aurora-content">
+                So, take a glimpse into what Windyhill has to offer, and let your imagination wander through the beauty that awaits. We look forward to being a part of your most memorable vacation, where rest, relaxation, and rejuvenation come together in perfect harmony. Your preview of Windyhill is just the beginning of an enchanting escape that awaits you.</p>
+    <h2>Rates of the Campsite</h2>
+                <p class="aurora-content">
+
+                </p>
+    <h2>How to go there?</h2>
+                <h3>Manila to Windyhill Agritourism Park Aurora</h3>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d986181.3567348149!2d120.47371276587805!3d15.088389787030668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x3397ca03571ec38b%3A0x69d1d5751069c11f!2smanila!3m2!1d14.5995124!2d120.9842195!4m5!1s0x33974fa1189df54b%3A0x6328ded7880468cd!2sWindyhill%20Agritourism%20Park%2C%20Dingalan%2C%20Aurora!3m2!1d15.4149429!2d121.3755051!5e0!3m2!1sen!2sph!4v1705805546590!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            <a href="https://www.google.com/maps/dir/manila/Windyhill+Agritourism+Park,+Dingalan,+Aurora/@15.0883898,120.4737128,9z/am=t/data=!4m14!4m13!1m5!1m1!1s0x3397ca03571ec38b:0x69d1d5751069c11f!2m2!1d120.9842195!2d14.5995124!1m5!1m1!1s0x33974fa1189df54b:0x6328ded7880468cd!2m2!1d121.3755051!2d15.4149429!3e0?entry=ttu" class="button">
+                View on Google Maps
+            </a>
+            <h3> Windyhill Agritourism Park </h3>
+            <div class="roww">
+                <div class="column">
+                  <img src="../img/aurora.jpeg"style="width:100%">
+                </div>
+                <div class="column">
+                  <img src="../img/aurora1.jpg"  style="width:100%">
+                </div>
+              </div>
+            <div class="roww">
+                <div class="column">
+                  <img src="../img/aurora2.jpeg"  style="width:100%">
+                </div>
+                <div class="column">
+                    <img src="../img/aurora3.jpeg"  style="width:100%">
+                  </div>
+            </div>
+            <footer>
+                2024 Google Maps on Website. All rights reserved
+            </footer>
+
+    </div>
+</div>
+</div>
+
+
+    
+<!-- ... Your existing HTML ... -->
+
+<!-- ... Your existing HTML ... -->
+
+<div class="comments-container">
+    <h2>Comments</h2>
+    <form id="commentForm">
+        <label for="commentAuthor">Name:</label>
+        <input type="text" id="commentAuthor" name="commentAuthor" required>
+
+        <label for="commentContent">Comment:</label>
+        <textarea id="commentContent" name="commentContent" rows="4" required></textarea>
+
+        <button type="submit">Post Comment</button>
+    </form>
+
+    <!-- Display Comments -->
+    <div id="comments"></div>
+</div>
+
+<script>
+    document.getElementById("commentForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        // Get values from the form
+        var author = document.getElementById("commentAuthor").value;
+        var content = document.getElementById("commentContent").value;
+
+        // Create a new comment element
+        var commentElement = document.createElement("div");
+        commentElement.className = "comment";
+        commentElement.innerHTML = '<p class="comment-author">' + author + ':</p><p class="comment-content">' + content + '</p>';
+
+        // Append the comment to the comments container
+        document.getElementById("comments").appendChild(commentElement);
+
+        // Clear the form
+        document.getElementById("commentForm").reset();
+    });
+</script>
+
+
+
+    
+    </div>
+</body>
+</html>

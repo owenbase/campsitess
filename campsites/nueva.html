@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>HiStory Camp</title>
+</head>
+<body>
+    <div class="nuevaa">
+    <div class="container2">
+        
+        <div class="navbar">
+            <img src="../img/logo.png" class="logo">
+
+        <nav>
+            <ul>
+            <li><a href="../homepage.html">Home</a></li>
+            <li><a href="all.html">Campsite</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            </ul>
+            </nav>
+    </div>
+   
+
+        <h1 class="nueva-title"> Sunset Peak Nature Camp Nueva Ecija </h1>
+    <div class="nueva-container">
+        
+        <p class="nueva-content">
+            Perched high above, the Overlooking ViewDeck serves as a vantage point that offers panoramic views, inviting visitors to lose themselves in the expansive landscapes that unfold beneath. Whether it's the undulating hills, verdant valleys, or the distant horizon, each glance from the ViewDeck becomes a visual feast that leaves an indelible mark on the soul.</p>
+            <p class="nueva-content">
+                The culinary journey at the Overlooking ViewDeck is a celebration of flavors that complements the beauty of the surroundings. With a menu curated to tantalize the taste buds, guests are treated to a gastronomic experience that mirrors the richness of the natural landscapes. From locally inspired dishes to international delights, every bite becomes a moment to savor, enhancing the overall journey.</p>
+            <p class="nueva-content">
+                As the sun begins its descent, casting a warm palette of hues across the sky, the Overlooking ViewDeck transforms into a front-row seat to nature's grand finale—the sunset view. The skies ignite with shades of orange and pink, creating a canvas that mirrors the day's farewell. Witnessing this celestial spectacle becomes a ritual, a moment of quiet reflection as the day gracefully transitions into night.</p>
+            <p class="nueva-content">
+                For those seeking the allure of camping, the Overlooking ViewDeck extends an invitation to its campsite—a place where the simplicity of outdoor living meets the magic of the starlit sky. Under the celestial canopy, campers find respite, sharing stories by the flickering campfire, and creating memories against the backdrop of the tranquil night.</p>
+    <h2>Rates of the Campsite</h2>
+                <p class="nueva-content">
+
+                </p>
+    <h2>How to go there?</h2>
+                <h3>Manila to Sunset Peak Nature Camp Nueva Ecija </h3>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d986442.6741416855!2d120.3491462134472!3d15.031973721895005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x3397ca03571ec38b%3A0x69d1d5751069c11f!2sManila%2C%20Metro%20Manila!3m2!1d14.5995124!2d120.9842195!4m5!1s0x3397318762872f6d%3A0xea231e40e6b22189!2sSunset%20Peak%20Nature%20Camp%2C%20Tanawan%20-%20Laur%20Road%2C%20Palayan%20City%2C%20Nueva%20Ecija!3m2!1d15.4657132!2d121.12675189999999!5e0!3m2!1sen!2sph!4v1706498373169!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            <a href="https://www.google.com/maps/dir/Manila,+Metro+Manila/Sunset+Peak+Nature+Camp,+Tanawan+-+Laur+Road,+Palayan+City,+Nueva+Ecija/@15.0319737,120.3491462,9z/am=t/data=!4m13!4m12!1m5!1m1!1s0x3397ca03571ec38b:0x69d1d5751069c11f!2m2!1d120.9842195!2d14.5995124!1m5!1m1!1s0x3397318762872f6d:0xea231e40e6b22189!2m2!1d121.1267519!2d15.4657132?entry=ttu" class="button">
+                View on Google Maps
+            </a>
+            <h3>Sunset Peak Nature Camp Nueva Ecija</h3>
+            <div class="roww">
+                <div class="column">
+                    <img src="../img/nueva.jpg" style="width: 100%">
+                </div>
+                <div class="column">
+                    <img src="../img/nueva3.jpg" style="width: 100%">
+                </div>
+            <div class="roww">
+                </div><div class="column">
+                    <img src="../img/nueva1.jpg" style="width: 100%">
+                </div>
+                <div class="column">
+                    <img src="../img/nueva2.jpeg" style="width: 100%">
+                </div>
+            </div>
+            </div>
+            <footer>
+                2024 Google Maps on Website. All rights reserved
+            </footer>
+
+    </div>
+</div>
+</div>
+
+
+    
+<!-- ... Your existing HTML ... -->
+
+<!-- ... Your existing HTML ... -->
+
+<div class="comments-container">
+    <h2>Comments</h2>
+    <form id="commentForm">
+        <label for="commentAuthor">Name:</label>
+        <input type="text" id="commentAuthor" name="commentAuthor" required>
+
+        <label for="commentContent">Comment:</label>
+        <textarea id="commentContent" name="commentContent" rows="4" required></textarea>
+
+        <button type="submit">Post Comment</button>
+    </form>
+
+    <!-- Display Comments -->
+    <div id="comments"></div>
+</div>
+
+<script>
+    document.getElementById("commentForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        // Get values from the form
+        var author = document.getElementById("commentAuthor").value;
+        var content = document.getElementById("commentContent").value;
+
+        // Create a new comment element
+        var commentElement = document.createElement("div");
+        commentElement.className = "comment";
+        commentElement.innerHTML = '<p class="comment-author">' + author + ':</p><p class="comment-content">' + content + '</p>';
+
+        // Append the comment to the comments container
+        document.getElementById("comments").appendChild(commentElement);
+
+        // Clear the form
+        document.getElementById("commentForm").reset();
+    });
+</script>
+
+
+
+    
+    </div>
+</body>
+</html>

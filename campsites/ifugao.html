@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>HiStory Camp</title>
+</head>
+<body>
+    <div class="ifugaoo">
+    <div class="container2">
+        
+        <div class="navbar">
+            <img src="../img/logo.png" class="logo">
+
+        <nav>
+            <ul>
+            <li><a href="../homepage.html">Home</a></li>
+            <li><a href="all.html">Campsite</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            </ul>
+            </nav>
+    </div>
+   
+
+        <h1 class="ifugao-title"> Bonne Riviere Nature Farm Resort ifugao </h1>
+    <div class="ifugao-container">
+        
+        <p class="ifugao-content">
+            Embark on a journey to the heights of wonder and discovery as we extend a thrilling invitation to all adventure seekers and mountain enthusiasts. In the heart of Luzon, Kalawitan awaits, poised to redefine its standing as one of the Philippines' majestic peaks. Recent revelations and corroborated data signal a shift in perception, positioning Kalawitan as a rising star in the realm of mountain exploration.</p>
+            <p class="ifugao-content">
+                The past has witnessed debates and discrepancies surrounding Kalawitan's elevation, prompting a closer examination by esteemed sources such as PinoyMountaineer. In the preparation of the List of Highest Mountains in 2009, Kalawitan's elevation of 2714 was met with skepticism, leading to an omission from the rankings. However, the tides of discovery are turning, fueled by recent GPS data and insights from various reliable sources.</p>
+            <p class="ifugao-content">
+                As the dust settles, a compelling narrative emerges—Kalawitan, with its more-than-2700 altitude, stands on the cusp of recognition. The data, meticulously gathered and cross-referenced, paints a vivid picture of a mountain that commands attention, not just for its sheer height but for the untamed beauty that graces its slopes.</p>
+            <p class="ifugao-content">
+                In the forthcoming updates, Kalawitan is poised to ascend the ranks, earning its place as the tenth highest mountain in the Philippines and the fourth highest in Luzon. This revelation opens a gateway to an unexplored realm, inviting intrepid souls to conquer its heights and witness the breathtaking vistas that unfold from its summit. </p>
+    <h2>Rates of the Campsite</h2>
+                <p class="ifugao-content">
+
+                </p>
+    <h2></h2>
+                <h3> </h3>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1965809.743640448!2d119.65735367239635!3d15.779038705880563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x338fd5f20071ef41%3A0xf44eec07a86dd8de!2sMt.%20Kalawitan%2C%20Sabangan%2C%20Mountain%20Province!5e0!3m2!1sen!2sph!4v1705823024403!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            <a href="https://www.google.com/maps/place/Mt.+Kalawitan,+Sabangan,+Mountain+Province/@15.7790387,119.6573537,8z/data=!4m22!1m15!4m14!1m6!1m2!1s0x3397ca03571ec38b:0x69d1d5751069c11f!2sManila,+Metro+Manila!2m2!1d120.9842195!2d14.5995124!1m6!1m2!1s0x338fd5f20071ef41:0xf44eec07a86dd8de!2sMt.+Kalawitan,+Sabangan,+Mountain+Province,+Hungduan,+Ifugao!2m2!1d120.9703075!2d16.9612302!3m5!1s0x338fd5f20071ef41:0xf44eec07a86dd8de!8m2!3d16.9612302!4d120.9703075!16s%2Fg%2F11bzyj_k18?entry=ttu" class="button">
+                View on Google Maps
+            </a>
+            <h3> Mt. Kalawitan, Sabangan, Mountain Province </h3>
+            <div class="roww">
+                <div class="column">
+                    <img src="../img/ifugao.jpg" style="width: 100%">
+                </div>
+                <div class="column">
+                    <img src="../img/ifugao3.jpg" style="width: 100%">
+                </div>
+            <div class="roww">
+                </div><div class="column">
+                    <img src="../img/ifugao2.jpg" style="width: 100%">
+                </div>
+                <div class="column">
+                    <img src="../img/ifugao1.jpg" style="width: 100%">
+                </div>
+            </div>
+            </div>
+            <footer>
+                2024 Google Maps on Website. All rights reserved
+            </footer>
+
+    </div>
+</div>
+</div>
+
+
+    
+<!-- ... Your existing HTML ... -->
+
+<!-- ... Your existing HTML ... -->
+
+<div class="comments-container">
+    <h2>Comments</h2>
+    <form id="commentForm">
+        <label for="commentAuthor">Name:</label>
+        <input type="text" id="commentAuthor" name="commentAuthor" required>
+
+        <label for="commentContent">Comment:</label>
+        <textarea id="commentContent" name="commentContent" rows="4" required></textarea>
+
+        <button type="submit">Post Comment</button>
+    </form>
+
+    <!-- Display Comments -->
+    <div id="comments"></div>
+</div>
+
+<script>
+    document.getElementById("commentForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        // Get values from the form
+        var author = document.getElementById("commentAuthor").value;
+        var content = document.getElementById("commentContent").value;
+
+        // Create a new comment element
+        var commentElement = document.createElement("div");
+        commentElement.className = "comment";
+        commentElement.innerHTML = '<p class="comment-author">' + author + ':</p><p class="comment-content">' + content + '</p>';
+
+        // Append the comment to the comments container
+        document.getElementById("comments").appendChild(commentElement);
+
+        // Clear the form
+        document.getElementById("commentForm").reset();
+    });
+</script>
+
+
+
+    
+    </div>
+</body>
+</html>

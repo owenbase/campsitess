@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>HiStory Camp</title>
+</head>
+<body>
+    <div class="palawann">
+    <div class="container2">
+        
+        <div class="navbar">
+            <img src="../img/logo.png" class="logo">
+
+        <nav>
+            <ul>
+            <li><a href="../homepage.html">Home</a></li>
+            <li><a href="all.html">Campsite</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            </ul>
+            </nav>
+    </div>
+   
+
+        <h1 class="palawan-title"> Forest Camp El Nido Palawan </h1>
+    <div class="palawan-container">
+        
+        <p class="palawan-content">
+            As you venture into our camp, be prepared to be captivated by the picturesque surroundings that unfold before you. The scenic view, a panorama of undulating landscapes, lush greenery, and perhaps a serene water feature, becomes a visual feast that beckons you to immerse yourself in the soothing embrace of nature.</p>
+            <p class="palawan-content">
+                Our commitment to providing a holistic experience extends to the design of our camp. Every detail, from the layout of communal spaces to the cozy aesthetics, is meticulously crafted to create an environment that promotes relaxation and rejuvenation. The ambiance is carefully curated to evoke a sense of warmth and comfort, ensuring that your stay is not just a temporary escape but a transformative journey.</p>
+            <p class="palawan-content">
+                The camp's design is more than just aesthetics it's a thoughtful arrangement that encourages moments of introspection and connection. Whether you choose to unwind in a cozy nook, enjoy the view from a strategically placed deck, or gather around a communal space, every corner is an opportunity to harmonize with the natural surroundings and find solace for your mind and soul.</p>
+            <p class="palawan-content">
+                In this haven, we invite you to disconnect from the hustle and bustle of everyday life and reconnect with the simplicity and beauty of the natural world. Allow the soothing sounds of nature, the crispness of the air, and the breathtaking views to become a balm for your senses.</p>
+    <h2>Rates of the Campsite</h2>
+                <p class="palawan-content">
+
+                </p>
+    <h2>How to go there?</h2>
+                <h3>Manila to Forest Camp El Nido Palawan </h3>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d3984333.9111331445!2d117.48765956591177!3d12.781687083934129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x3397ca03571ec38b%3A0x69d1d5751069c11f!2sManila%2C%20Metro%20Manila!3m2!1d14.5995124!2d120.9842195!4m5!1s0x33b655c68ca7b06f%3A0x81d5d63291ef7d2c!2sForest%20Camp%20El%20Nido%2C%20Palawan%2C%20El%20Nido%2C%205313%20Palawan!3m2!1d11.1870887!2d119.3970901!5e0!3m2!1sen!2sph!4v1706499518000!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            <a href="https://www.google.com/maps/dir/Manila,+Metro+Manila/Forest+Camp+El+Nido,+Palawan,+El+Nido,+5313+Palawan/@12.7816871,117.4876596,7z/am=t/data=!4m13!4m12!1m5!1m1!1s0x3397ca03571ec38b:0x69d1d5751069c11f!2m2!1d120.9842195!2d14.5995124!1m5!1m1!1s0x33b655c68ca7b06f:0x81d5d63291ef7d2c!2m2!1d119.3970901!2d11.1870887?hl=en&entry=ttu" class="button">
+                View on Google Maps
+            </a>
+            <h3>Forest Camp El Nido Palawan</h3>
+            <div class="roww">
+                <div class="column">
+                    <img src="../img/palawan.jpg" style="width: 100%">
+                </div>
+                <div class="column">
+                    <img src="../img/palawan3.jpg" style="width: 100%">
+                </div>
+            <div class="roww">
+                </div><div class="column">
+                    <img src="../img/palawan1.jpg" style="width: 100%">
+                </div>
+                <div class="column">
+                    <img src="../img/palawan2.jpg" style="width: 100%">
+                </div>
+            </div>
+            </div>
+            <footer>
+                2024 Google Maps on Website. All rights reserved
+            </footer>
+
+    </div>
+</div>
+</div>
+
+
+    
+<!-- ... Your existing HTML ... -->
+
+<!-- ... Your existing HTML ... -->
+
+<div class="comments-container">
+    <h2>Comments</h2>
+    <form id="commentForm">
+        <label for="commentAuthor">Name:</label>
+        <input type="text" id="commentAuthor" name="commentAuthor" required>
+
+        <label for="commentContent">Comment:</label>
+        <textarea id="commentContent" name="commentContent" rows="4" required></textarea>
+
+        <button type="submit">Post Comment</button>
+    </form>
+
+    <!-- Display Comments -->
+    <div id="comments"></div>
+</div>
+
+<script>
+    document.getElementById("commentForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        // Get values from the form
+        var author = document.getElementById("commentAuthor").value;
+        var content = document.getElementById("commentContent").value;
+
+        // Create a new comment element
+        var commentElement = document.createElement("div");
+        commentElement.className = "comment";
+        commentElement.innerHTML = '<p class="comment-author">' + author + ':</p><p class="comment-content">' + content + '</p>';
+
+        // Append the comment to the comments container
+        document.getElementById("comments").appendChild(commentElement);
+
+        // Clear the form
+        document.getElementById("commentForm").reset();
+    });
+</script>
+
+
+
+    
+    </div>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>HiStory Camp</title>
+</head>
+<body>
+    <div class="lagunaa">
+    <div class="container2">
+        
+        <div class="navbar">
+            <img src="../img/logo.png" class="logo">
+
+        <nav>
+            <ul>
+            <li><a href="../homepage.html">Home</a></li>
+            <li><a href="all.html">Campsite</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            </ul>
+            </nav>
+    </div>
+   
+
+        <h1 class="laguna-title"> Domelis Camping Site Laguna </h1>
+    <div class="laguna-container">
+        
+        <p class="laguna-content">
+            In the wake of a global pandemic, where the dynamics of travel have shifted, a silver lining emerged for adventure seekers and outdoor enthusiasts—camping. As restrictions eased and the call of exploration beckoned, camping swiftly rose to prominence, becoming a cherished activity for those yearning to connect with nature while ensuring safety in open spaces. Among the plethora of camping sites that have captured the hearts of travelers, one gem stands out—the Domelis Camping Site in Cavinti, Laguna.</p>
+            <p class="laguna-content">
+                The resurgence of camping as a preferred outdoor activity is not merely a trend; it's a testament to the intrinsic desire for connection, rejuvenation, and a break from the monotony of daily life. The allure of camping lies not just in its newfound status as a safe travel option, but also in its ability to provide solace from the stresses of the modern world.</p>
+            <p class="laguna-content">
+                Camping, with its inherent characteristics of wide and open spaces, aligns seamlessly with the need for social distancing—a crucial aspect in the era of the ongoing pandemic. The great outdoors offer not only a retreat from crowded urban spaces but also a canvas for fostering a deeper connection with oneself and the natural world.</p>
+            <p class="laguna-content">
+                For avid campers and enthusiasts, the joy of exploring different campsites has become a cherished ritual. In the quest for serenity, adventure, and a change of scenery, camping offers a versatile escape. As one traveler attests to the allure of the outdoors, camping has become a weekly ritual, a therapeutic journey from one campsite to another—a pursuit of variety and connection. </p>
+    <h2>Rates of the Campsite</h2>
+                <p class="laguna-content">
+
+                </p>
+    <h2>How to go there?</h2>
+                <h3>Manila to Domelis Camping Site Laguna </h3>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d494672.1495539296!2d120.93086511029354!3d14.391027948503757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x3397ca03571ec38b%3A0x69d1d5751069c11f!2sManila%2C%20Metro%20Manila!3m2!1d14.5995124!2d120.9842195!4m5!1s0x3397f90033b22ae7%3A0xc71c3299fab7d41f!2s7GRQ%2B6RR%20Domelis%20Camping%20Site%2C%20Lumban%2C%20Laguna!3m2!1d14.2906029!2d121.5395131!5e0!3m2!1sen!2sph!4v1705988483755!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            <a href="https://google.com/maps/dir/Manila,+Metro+Manila/7GRQ%2B6RR+Domelis+Camping+Site,+Lumban,+Laguna/@14.3910279,120.9308651,10z/am=t/data=!4m13!4m12!1m5!1m1!1s0x3397ca03571ec38b:0x69d1d5751069c11f!2m2!1d120.9842195!2d14.5995124!1m5!1m1!1s0x3397f90033b22ae7:0xc71c3299fab7d41f!2m2!1d121.5395131!2d14.2906029?hl=en&entry=ttu" class="button">
+                View on Google Maps
+            </a>
+            <h3>Domelis Camping Site Laguna </h3>
+            <div class="roww">
+                <div class="column">
+                    <img src="../img/laguna.jpg" style="width: 100%">
+                </div>
+                <div class="column">
+                    <img src="../img/laguna1.jpg" style="width: 100%">
+                </div>
+            <div class="roww">
+                </div><div class="column">
+                    <img src="../img/laguna2.jpg" style="width: 100%">
+                </div>
+                <div class="column">
+                    <img src="../img/laguna3.jpg" style="width: 100%">
+                </div>
+            </div>
+            </div>
+            <footer>
+                2024 Google Maps on Website. All rights reserved
+            </footer>
+
+    </div>
+</div>
+</div>
+
+
+    
+<!-- ... Your existing HTML ... -->
+
+<!-- ... Your existing HTML ... -->
+
+<div class="comments-container">
+    <h2>Comments</h2>
+    <form id="commentForm">
+        <label for="commentAuthor">Name:</label>
+        <input type="text" id="commentAuthor" name="commentAuthor" required>
+
+        <label for="commentContent">Comment:</label>
+        <textarea id="commentContent" name="commentContent" rows="4" required></textarea>
+
+        <button type="submit">Post Comment</button>
+    </form>
+
+    <!-- Display Comments -->
+    <div id="comments"></div>
+</div>
+
+<script>
+    document.getElementById("commentForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        // Get values from the form
+        var author = document.getElementById("commentAuthor").value;
+        var content = document.getElementById("commentContent").value;
+
+        // Create a new comment element
+        var commentElement = document.createElement("div");
+        commentElement.className = "comment";
+        commentElement.innerHTML = '<p class="comment-author">' + author + ':</p><p class="comment-content">' + content + '</p>';
+
+        // Append the comment to the comments container
+        document.getElementById("comments").appendChild(commentElement);
+
+        // Clear the form
+        document.getElementById("commentForm").reset();
+    });
+</script>
+
+
+
+    
+    </div>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>HiStory Camp</title>
+</head>
+<body>
+    <div class="camariness">
+    <div class="container2">
+        
+        <div class="navbar">
+            <img src="../img/logo.png" class="logo">
+
+        <nav>
+            <ul>
+            <li><a href="../homepage.html">Home</a></li>
+            <li><a href="all.html">Campsite</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            </ul>
+            </nav>
+    </div>
+   
+
+        <h1 class="camarines-title"> Tumandok Camarines </h1>
+    <div class="camarines-container">
+        
+        <p class="camarines-content">
+            Step into a world of outdoor bliss as we extend a warm invitation to you at our esteemed campground, a haven that promises an experience beyond the ordinary. As proud members of the campground community, we are thrilled to share that our establishment has garnered recognition and positive acclaim, earning its place among the distinguished in our category.
+            <p class="camarines-content">
+                The recognition we hold dear is not just our own but echoes through the sentiments of our valued guests. With gratitude, we share that our campground has received three reviews, each reflecting the genuine experiences of those who have shared moments within our tranquil grounds. These reviews paint a picture of a place where the allure of nature meets the expectations of discerning campers.</p>
+            <p class="camarines-content">
+                What adds to our joy is the remarkable average rating of 4.7 stars bestowed upon us by those who have graced our campground. This accolade serves as a testament to the dedication we pour into ensuring that every aspect of your stay exceeds expectations. It fuels our commitment to providing an environment where the serenity of nature intertwines seamlessly with the warmth of our hospitality.</p>
+            <p class="camarines-content">
+                As we extend this invitation to you, we do so with the promise of an experience that transcends the ordinary. Whether you seek a tranquil escape, an adventure amidst the trees, or simply a place to gather with loved ones, our campground is ready to embrace you.
+    <h2>Rates of the Campsite</h2>
+                <p class="camarines-content">
+
+                </p>
+    <h2>How to go there?</h2>
+                <h3>Manila to Tumandok Camarines</h3>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d989981.5032416375!2d122.01061524999994!3d14.246498800000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x3397ca03571ec38b%3A0x69d1d5751069c11f!2sManila%2C%20Metro%20Manila!3m2!1d14.5995124!2d120.9842195!4m5!1s0x3398ad1c5371f07f%3A0x24c98e39b8f2982a!2sTumandok%2C%20422J%2B5CV%2C%20Mercedes%2C%20Camarines%20Norte!3m2!1d14.100484499999999!2d123.0310573!5e0!3m2!1sen!2sph!4v1705814999367!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            <a href="https://www.google.com/maps/dir/Manila,+Metro+Manila/Tumandok,+422J%2B5CV,+Mercedes,+Camarines+Norte/@14.2464988,122.0106152,9z/am=t/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x3397ca03571ec38b:0x69d1d5751069c11f!2m2!1d120.9842195!2d14.5995124!1m5!1m1!1s0x3398ad1c5371f07f:0x24c98e39b8f2982a!2m2!1d123.0310573!2d14.1004845?entry=ttu" class="button">
+                View on Google Maps
+            </a>
+            <h3> Tumandok </h3>
+            <div class="roww">
+                <div class="column">
+                    <img src="../img/camarines.jpeg" style="width: 100%">
+                </div>
+                <div class="column">
+                    <img src="../img/camarines1.jpeg" style="width: 100%">
+                </div>
+            <div class="roww">
+                </div><div class="column">
+                    <img src="../img/camarines2.jpeg" style="width: 100%">
+                </div>
+                <div class="column">
+                    <img src="../img/camarines3.jpeg" style="width: 100%">
+                </div>
+            </div>
+            </div>
+            <footer>
+                2024 Google Maps on Website. All rights reserved
+            </footer>
+
+    </div>
+</div>
+</div>
+
+
+    
+<!-- ... Your existing HTML ... -->
+
+<!-- ... Your existing HTML ... -->
+
+<div class="comments-container">
+    <h2>Comments</h2>
+    <form id="commentForm">
+        <label for="commentAuthor">Name:</label>
+        <input type="text" id="commentAuthor" name="commentAuthor" required>
+
+        <label for="commentContent">Comment:</label>
+        <textarea id="commentContent" name="commentContent" rows="4" required></textarea>
+
+        <button type="submit">Post Comment</button>
+    </form>
+
+    <!-- Display Comments -->
+    <div id="comments"></div>
+</div>
+
+<script>
+    document.getElementById("commentForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        // Get values from the form
+        var author = document.getElementById("commentAuthor").value;
+        var content = document.getElementById("commentContent").value;
+
+        // Create a new comment element
+        var commentElement = document.createElement("div");
+        commentElement.className = "comment";
+        commentElement.innerHTML = '<p class="comment-author">' + author + ':</p><p class="comment-content">' + content + '</p>';
+
+        // Append the comment to the comments container
+        document.getElementById("comments").appendChild(commentElement);
+
+        // Clear the form
+        document.getElementById("commentForm").reset();
+    });
+</script>
+
+
+
+    
+    </div>
+</body>
+</html>

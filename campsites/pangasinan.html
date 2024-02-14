@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>HiStory Camp</title>
+</head>
+<body>
+    <div class="pangasinann">
+    <div class="container2">
+        
+        <div class="navbar">
+            <img src="../img/logo.png" class="logo">
+
+        <nav>
+            <ul>
+            <li><a href="../homepage.html">Home</a></li>
+            <li><a href="all.html">Campsite</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            </ul>
+            </nav>
+    </div>
+   
+
+        <h1 class="pangasinan-title"> Camp Puor Pangasinan </h1>
+    <div class="pangasinan-container">
+        
+        <p class="pangasinan-content">
+           Welcome to a sanctuary where the echoes of nature's symphony blend seamlessly with the warmth of authentic Filipino hospitality—welcome to your everlasting camping experience at our haven.</p>
+            <p class="pangasinan-content">
+                As you traverse the grounds, you'll discover that our camp is designed to seamlessly integrate with the natural beauty that surrounds it. Cozy camping spots are tucked away amidst the foliage, providing a retreat for those seeking solitude, while communal areas invite shared stories and laughter—a perfect balance between the tranquility of nature and the warmth of human connection.</p>
+            <p class="pangasinan-content">
+                Our commitment to authentic Filipino hospitality extends to every corner of the camp. From the moment you arrive, you'll be embraced by the genuine warmth of our staff, who are not just caretakers but storytellers eager to share the tales of the land. The aroma of traditional Filipino dishes wafting through the air promises a culinary journey that mirrors the richness of our culture.</p>
+            <p class="pangasinan-content">
+                At our camp, we invite you to partake in an everlasting camping experience—a tapestry of adventure, tranquility, and Filipino hospitality that lingers in the heart long after you bid the outdoors farewell. Whether you seek the thrill of nature, the embrace of community, or a taste of authentic Filipino life, our camp is your canvas for a truly immersive and everlasting camping experience.</p>
+    <h2>Rates of the Campsite</h2>
+                <p class="pangasinan-content">
+
+                </p>
+    <h2>How to go there?</h2>
+                <h3>Manila to Camp Puor  Pangasinan </h3>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1968840.3368521407!2d119.10842287709131!3d15.46337135202261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x3397ca03571ec38b%3A0x69d1d5751069c11f!2sManila%2C%20Metro%20Manila!3m2!1d14.5995124!2d120.9842195!4m5!1s0x3393c9c772fcacb7%3A0x1d90108f56589cc4!2sCamp%20Puor%2C%20Bolinao%2C%20Pangasinan!3m2!1d16.3327626!2d119.86920769999999!5e0!3m2!1sen!2sph!4v1706501333083!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            <a href="https://www.google.com/maps/dir/Manila,+Metro+Manila/Camp+Puor,+Bolinao,+Pangasinan/@15.4633714,119.1084229,8z/am=t/data=!4m13!4m12!1m5!1m1!1s0x3397ca03571ec38b:0x69d1d5751069c11f!2m2!1d120.9842195!2d14.5995124!1m5!1m1!1s0x3393c9c772fcacb7:0x1d90108f56589cc4!2m2!1d119.8692077!2d16.3327626?hl=en&entry=ttu" class="button">
+                View on Google Maps
+            </a>
+            <h3>Camp Puor  Pangasinan</h3>
+            <div class="roww">
+                <div class="column">
+                    <img src="../img/pangasinan2.jpg" style="width: 100%">
+                </div>
+                <div class="column">
+                    <img src="../img/pangasinan3.jpg" style="width: 100%">
+                </div>
+            <div class="roww">
+                </div><div class="column">
+                    <img src="../img/pangasinan1.jpg" style="width: 100%">
+                </div>
+                <div class="column">
+                    <img src="../img/pangasinan.jpg" style="width: 100%">
+                </div>
+            </div>
+            </div>
+            <footer>
+                2024 Google Maps on Website. All rights reserved
+            </footer>
+
+    </div>
+</div>
+</div>
+
+
+    
+<!-- ... Your existing HTML ... -->
+
+<!-- ... Your existing HTML ... -->
+
+<div class="comments-container">
+    <h2>Comments</h2>
+    <form id="commentForm">
+        <label for="commentAuthor">Name:</label>
+        <input type="text" id="commentAuthor" name="commentAuthor" required>
+
+        <label for="commentContent">Comment:</label>
+        <textarea id="commentContent" name="commentContent" rows="4" required></textarea>
+
+        <button type="submit">Post Comment</button>
+    </form>
+
+    <!-- Display Comments -->
+    <div id="comments"></div>
+</div>
+
+<script>
+    document.getElementById("commentForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        // Get values from the form
+        var author = document.getElementById("commentAuthor").value;
+        var content = document.getElementById("commentContent").value;
+
+        // Create a new comment element
+        var commentElement = document.createElement("div");
+        commentElement.className = "comment";
+        commentElement.innerHTML = '<p class="comment-author">' + author + ':</p><p class="comment-content">' + content + '</p>';
+
+        // Append the comment to the comments container
+        document.getElementById("comments").appendChild(commentElement);
+
+        // Clear the form
+        document.getElementById("commentForm").reset();
+    });
+</script>
+
+
+
+    
+    </div>
+</body>
+</html>

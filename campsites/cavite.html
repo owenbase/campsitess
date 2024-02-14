@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>HiStory Camp</title>
+</head>
+<body>
+    <div class="cavitee">
+    <div class="container2">
+        
+        <div class="navbar">
+            <img src="../img/logo.png" class="logo">
+
+        <nav>
+            <ul>
+            <li><a href="../homepage.html">Home</a></li>
+            <li><a href="all.html">Campsite</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            </ul>
+            </nav>
+    </div>
+   
+
+        <h1 class="cavite-title"> Bonne Riviere Nature Farm Resort Cavite </h1>
+    <div class="cavite-container">
+        
+        <p class="cavite-content">
+            Embark on a journey into the heart of nature's embrace, where the whispers of the wind and the gentle rustle of leaves invite you to experience the serene beauty of Bonne Rivière Nature Farm Resort. Nestled along the banks of a tranquil river, our haven is more than just a destination—it's a private campsite, a versatile events space, and a riverside resort, all seamlessly woven into one enriching experience.</p>
+            <p class="cavite-content">
+                As the gates of Bonne Rivière swing open, you step into a realm where the modern world fades away, and the splendor of nature takes center stage. Our private campsite offers a retreat for those seeking solitude in the great outdoors. Picture yourself beneath a canopy of stars, your tent nestled among the trees, creating an intimate connection with the natural beauty that surrounds you.</p>
+            <p class="cavite-content">
+                But Bonne Rivière is not limited to the quietude of a campsite; it transforms into a dynamic events space, ready to host your celebrations, gatherings, and special occasions. From the rustically charming to the elegantly refined, our venue adapts to the tone and style of your event, ensuring that every moment is infused with the spirit of nature.</p>
+            <p class="cavite-content">
+                The rhythmic flow of the river sets the stage for our riverside resort, where the soothing waters become a canvas for relaxation and recreation. Dive into the cool embrace of the river, bask in the warmth of the sun on the riverbank, or embark on leisurely boat rides—each activity is a celebration of the harmonious relationship between water and land. </p>
+    <h2>Rates of the Campsite</h2>
+                <p class="cavite-content">
+
+                </p>
+    <h2>How to go there?</h2>
+                <h3>Manila to Bonne Riviere Nature Farm Resort Cavite </h3>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d494676.98899837857!2d120.63311360945264!3d14.388843236712962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x3397ca03571ec38b%3A0x69d1d5751069c11f!2sManila%2C%20Metro%20Manila!3m2!1d14.5995124!2d120.9842195!4m5!1s0x33bd834b77751b81%3A0xa411e29ad07c775f!2sBonne%20Riviere%20Nature%20Farm%20Resort%2C%20Pasong%20Baboy%2C%20Indang%2C%20Cavite!3m2!1d14.1946716!2d120.8487256!5e0!3m2!1sen!2sph!4v1705822479126!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            <a href="https://www.google.com/maps/dir/Manila,+Metro+Manila/Bonne+Riviere+Nature+Farm+Resort,+Pasong+Baboy,+Indang,+Cavite/@14.3888432,120.6331136,10z/am=t/data=!4m13!4m12!1m5!1m1!1s0x3397ca03571ec38b:0x69d1d5751069c11f!2m2!1d120.9842195!2d14.5995124!1m5!1m1!1s0x33bd834b77751b81:0xa411e29ad07c775f!2m2!1d120.8487256!2d14.1946716?entry=ttu" class="button">
+                View on Google Maps
+            </a>
+            <h3> Bonne Riviere Nature Farm Resort Cavite </h3>
+            <div class="roww">
+                <div class="column">
+                    <img src="../img/cavite.jpg" style="width: 100%">
+                </div>
+                <div class="column">
+                    <img src="../img/cavite1.jpeg" style="width: 100%">
+                </div>
+            <div class="roww">
+                </div><div class="column">
+                    <img src="../img/cavite2.jpeg" style="width: 100%">
+                </div>
+                <div class="column">
+                    <img src="../img/cavite3.jpg" style="width: 100%">
+                </div>
+            </div>
+            </div>
+            <footer>
+                2024 Google Maps on Website. All rights reserved
+            </footer>
+
+    </div>
+</div>
+</div>
+
+
+    
+<!-- ... Your existing HTML ... -->
+
+<!-- ... Your existing HTML ... -->
+
+<div class="comments-container">
+    <h2>Comments</h2>
+    <form id="commentForm">
+        <label for="commentAuthor">Name:</label>
+        <input type="text" id="commentAuthor" name="commentAuthor" required>
+
+        <label for="commentContent">Comment:</label>
+        <textarea id="commentContent" name="commentContent" rows="4" required></textarea>
+
+        <button type="submit">Post Comment</button>
+    </form>
+
+    <!-- Display Comments -->
+    <div id="comments"></div>
+</div>
+
+<script>
+    document.getElementById("commentForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        // Get values from the form
+        var author = document.getElementById("commentAuthor").value;
+        var content = document.getElementById("commentContent").value;
+
+        // Create a new comment element
+        var commentElement = document.createElement("div");
+        commentElement.className = "comment";
+        commentElement.innerHTML = '<p class="comment-author">' + author + ':</p><p class="comment-content">' + content + '</p>';
+
+        // Append the comment to the comments container
+        document.getElementById("comments").appendChild(commentElement);
+
+        // Clear the form
+        document.getElementById("commentForm").reset();
+    });
+</script>
+
+
+
+    
+    </div>
+</body>
+</html>

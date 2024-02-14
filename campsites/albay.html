@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>HiStory Camp</title>
+</head>
+<body>
+    <div class="albayy">
+    <div class="container2">
+        
+        <div class="navbar">
+            <img src="../img/logo.png" class="logo">
+
+        <nav>
+            <ul>
+            <li><a href="../homepage.html">Home</a></li>
+            <li><a href="all.html">Campsite</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            </ul>
+            </nav>
+    </div>
+   
+
+        <h1 class="albay-title"> Mt. Masaraga Campsite Albay </h1>
+    <div class="albay-container">
+        
+        <p class="albay-content">
+           Welcome to the enchanting realm of Mt. Masaraga Campsite, where the beauty of nature unfolds in a spectacular panorama that will leave you in awe. As you approach the site, the grandeur of Mt. Masaraga welcomes you with open arms. The view is nothing short of magical – a landscape that extends gracefully from left to right, and from the foothills to the towering summit of Mt. Masaraga
+           </p>
+            <p class="albay-content">
+                Situated in a valley between a gentle hill and the majestic Mt. Masaraga, the campsite provides an unparalleled perspective that accentuates the mountain's splendor. The strategic location not only frames the landscape beautifully but also creates an optical illusion, making Mt. Masaraga seem even more towering and deceptively close.</p>
+            <p class="albay-content">
+                This vantage point offers more than just a visual treat; it's an immersive experience into the heart of natural wonders. The valley below, the crisp mountain air, and the commanding presence of Mt. Masaraga come together to create an ambiance of tranquility and fascination.</p>
+            <p class="albay-content">
+                For those seeking refuge in the arms of nature and adventure enthusiasts yearning for the extraordinary, the Mt. Masaraga Campsite beckons. Here, nature reveals its raw and untouched beauty, inviting you to forge a deeper connection with the world around you. The verdant surroundings and the breathtaking view of Mt. Masaraga set the stage for a truly remarkable experience.</p>
+    <h2>Rates of the Campsite</h2>
+                <p class="albay-content">
+
+                </p>
+    <h2>How to go there?</h2>
+                <h3>Manila to Mt. Masaraga Albay</h3>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1982680.9800033174!2d120.96767983563285!3d13.933353880657474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x3397ca03571ec38b%3A0x69d1d5751069c11f!2smanila!3m2!1d14.5995124!2d120.9842195!4m5!1s0x33a1a641ac9322e5%3A0xc5a68bccad703da1!2smt.masaraga!3m2!1d13.306117599999999!2d123.5920273!5e0!3m2!1sen!2sph!4v1705804418380!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            <a href="https://www.google.com/maps/dir/manila/mt.masaraga/@13.9333539,120.9676798,8z/am=t/data=!4m14!4m13!1m5!1m1!1s0x3397ca03571ec38b:0x69d1d5751069c11f!2m2!1d120.9842195!2d14.5995124!1m5!1m1!1s0x33a1a641ac9322e5:0xc5a68bccad703da1!2m2!1d123.5920273!2d13.3061176!3e0?entry=ttu" class="button">
+                View on Google Maps
+            </a>
+            <h3> Mt. Masaraga Campsite </h3>
+            <div class="roww">
+                <div class="column">
+                  <img src="../img/albay.jpeg"style="width:100%">
+                </div>
+                <div class="column">
+                  <img src="../img/albay1.jpeg"  style="width:100%">
+                </div>
+                <div class="column">
+                  <img src="../img/albay2.jpg_large"  style="width:100%">
+                </div>
+                <div class="column">
+                    <img src="../img/albay3.jpg"  style="width:100%">
+                  </div>
+              </div>
+            <footer>
+                2024 Google Maps on Website. All rights reserved
+            </footer>
+
+    </div>
+</div>
+</div>
+
+
+    
+<!-- ... Your existing HTML ... -->
+
+<!-- ... Your existing HTML ... -->
+
+<div class="comments-container">
+    <h2>Comments</h2>
+    <form id="commentForm">
+        <label for="commentAuthor">Name:</label>
+        <input type="text" id="commentAuthor" name="commentAuthor" required>
+
+        <label for="commentContent">Comment:</label>
+        <textarea id="commentContent" name="commentContent" rows="4" required></textarea>
+
+        <button type="submit">Post Comment</button>
+    </form>
+
+    <!-- Display Comments -->
+    <div id="comments"></div>
+</div>
+
+<script>
+    document.getElementById("commentForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        // Get values from the form
+        var author = document.getElementById("commentAuthor").value;
+        var content = document.getElementById("commentContent").value;
+
+        // Create a new comment element
+        var commentElement = document.createElement("div");
+        commentElement.className = "comment";
+        commentElement.innerHTML = '<p class="comment-author">' + author + ':</p><p class="comment-content">' + content + '</p>';
+
+        // Append the comment to the comments container
+        document.getElementById("comments").appendChild(commentElement);
+
+        // Clear the form
+        document.getElementById("commentForm").reset();
+    });
+</script>
+
+
+
+    
+    </div>
+</body>
+</html>

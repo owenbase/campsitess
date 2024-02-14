@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>HiStory Camp</title>
+</head>
+<body>
+    <div class="catanduaness">
+    <div class="container2">
+        
+        <div class="navbar">
+            <img src="../img/logo.png" class="logo">
+
+        <nav>
+            <ul>
+            <li><a href="../homepage.html">Home</a></li>
+            <li><a href="all.html">Campsite</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            </ul>
+            </nav>
+    </div>
+   
+
+        <h1 class="catanduanes-title"> Yahay Farm Catanduanes </h1>
+    <div class="catanduanes-container">
+        
+        <p class="catanduanes-content">
+            Embark on a journey to tranquility, where the rhythmic melody of nature serenades your senses, and the hustle and bustle of modern living fade into the distant background. We invite you to leave the chaos behind and discover the oasis of calm and peace that awaits you here—a sanctuary crafted for the rejuvenation of your body, mind, and soul.</p>
+            <p class="catanduanes-content">
+                As you step into this haven, the air itself seems to carry the whispers of serenity, inviting you to unwind and embrace the soothing embrace of nature. Far from the hectic pace of everyday life, our retreat becomes a canvas for peaceful moments and a refuge for those seeking respite from the demands of the modern world.</p>
+            <p class="catanduanes-content">
+                This sanctuary is not just a place; it's an invitation to truly experience the long-sought calm that has eluded you amidst the noise of daily existence. Here, time slows down, and the tranquility seeps into your being, creating a space where stress dissipates, and a profound sense of peace takes root.</p>
+            <p class="catanduanes-content">
+                Perfectly suited for families, friends, and couples alike, our haven becomes the backdrop for shared moments and cherished memories. Whether you seek quality time with loved ones, a retreat with friends, or a romantic escape, every corner of this sanctuary is designed to cater to your unique desires.
+    <h2>Rates of the Campsite</h2>
+                <p class="catanduanes-content">
+
+                </p>
+    <h2>How to go there?</h2>
+                <h3>Manila to Yahay Farm Catanduanes</h3>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1982770.7218378477!2d121.26916540093093!3d13.922896804958034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x3397ca03571ec38b%3A0x69d1d5751069c11f!2sManila%2C%20Metro%20Manila!3m2!1d14.5995124!2d120.9842195!4m5!1s0x33a0154cf0d845c9%3A0x328b4a5071798d9e!2sYahay%20Farm%2C%20Virac%2C%20Catanduanes!3m2!1d13.5360131!2d124.19910739999999!5e0!3m2!1sen!2sph!4v1705815887565!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            <a href="https://www.google.com/maps/dir/Manila,+Metro+Manila/Yahay+Farm,+Virac,+Catanduanes/@13.9228968,121.2691654,8z/am=t/data=!4m13!4m12!1m5!1m1!1s0x3397ca03571ec38b:0x69d1d5751069c11f!2m2!1d120.9842195!2d14.5995124!1m5!1m1!1s0x33a0154cf0d845c9:0x328b4a5071798d9e!2m2!1d124.1991074!2d13.5360131?entry=ttu" class="button">
+                View on Google Maps
+            </a>
+            <h3> Yahay Farm Catanduanes </h3>
+            <div class="roww">
+                <div class="column">
+                    <img src="../img/catanduanes.jpeg" style="width: 100%">
+                </div>
+                <div class="column">
+                    <img src="../img/catanduanes1.jpeg" style="width: 100%">
+                </div>
+            <div class="roww">
+                </div><div class="column">
+                    <img src="../img/catanduanes2.jpeg" style="width: 100%">
+                </div>
+                <div class="column">
+                    <img src="../img/catanduanes3.jpeg" style="width: 100%">
+                </div>
+            </div>
+            </div>
+            <footer>
+                2024 Google Maps on Website. All rights reserved
+            </footer>
+
+    </div>
+</div>
+</div>
+
+
+    
+<!-- ... Your existing HTML ... -->
+
+<!-- ... Your existing HTML ... -->
+
+<div class="comments-container">
+    <h2>Comments</h2>
+    <form id="commentForm">
+        <label for="commentAuthor">Name:</label>
+        <input type="text" id="commentAuthor" name="commentAuthor" required>
+
+        <label for="commentContent">Comment:</label>
+        <textarea id="commentContent" name="commentContent" rows="4" required></textarea>
+
+        <button type="submit">Post Comment</button>
+    </form>
+
+    <!-- Display Comments -->
+    <div id="comments"></div>
+</div>
+
+<script>
+    document.getElementById("commentForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        // Get values from the form
+        var author = document.getElementById("commentAuthor").value;
+        var content = document.getElementById("commentContent").value;
+
+        // Create a new comment element
+        var commentElement = document.createElement("div");
+        commentElement.className = "comment";
+        commentElement.innerHTML = '<p class="comment-author">' + author + ':</p><p class="comment-content">' + content + '</p>';
+
+        // Append the comment to the comments container
+        document.getElementById("comments").appendChild(commentElement);
+
+        // Clear the form
+        document.getElementById("commentForm").reset();
+    });
+</script>
+
+
+
+    
+    </div>
+</body>
+</html>

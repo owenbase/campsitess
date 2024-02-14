@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>HiStory Camp</title>
+</head>
+<body>
+    <div class="quezonn">
+    <div class="container2">
+        
+        <div class="navbar">
+            <img src="../img/logo.png" class="logo">
+
+        <nav>
+            <ul>
+            <li><a href="../homepage.html">Home</a></li>
+            <li><a href="all.html">Campsite</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            </ul>
+            </nav>
+    </div>
+   
+
+        <h1 class="quezon-title"> Camp Narra Quezon </h1>
+    <div class="quezon-container">
+        
+        <p class="quezon-content">
+            From the moment you arrive, you'll be greeted by the gentle rustle of leaves and the inviting ambiance that characterizes Camp Narra. Our camp seamlessly integrates with the natural surroundings, providing a haven for those seeking refuge from the hustle and bustle of daily life. Cozy corners invite reflection, communal spaces beckon shared laughter, and the entire camp is a testament to the idea that simplicity and nature create the perfect canvas for a memorable experience.</p>
+            <p class="quezon-content">
+                Authentic Filipino hospitality is at the heart of Camp Narra. Our dedicated staff, embodying the warmth and friendliness inherent in Filipino culture, are here not just to host but to weave stories and share the essence of our land. Expect the aroma of traditional Filipino dishes to tantalize your taste buds, as each meal becomes a journey into the rich culinary tapestry of the Philippines.</p>
+            <p class="quezon-content">
+                As the sun sets, Camp Narra transforms into a magical realm under the canvas of stars. Bonfires invite storytelling, traditional music fills the air, and the night becomes an immersive experience in Filipino culture. It's a celebration of camaraderie and the spirit of "bayanihan," a cherished Filipino tradition of communal unity.</p>
+            <p class="quezon-content">
+                Camp Narra invites you to a timeless camping experience—an escape where nature's beauty intertwines with the heartfelt embrace of Filipino hospitality. Whether you seek the thrill of adventure, the serenity of nature, or a taste of Filipino life, our camp is a sanctuary where every moment becomes a cherished memory. Welcome to Camp Narra, where the beauty of nature and the warmth of Filipino culture create an unforgettable camping experience.</p>
+    <h2>Rates of the Campsite</h2>
+                <p class="quezon-content">
+
+                </p>
+    <h2>How to go there?</h2>
+                <h3>Manila to Camp Narra Quezon </h3>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d494951.2511655917!2d120.90338246183349!3d14.26449546206296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x3397ca03571ec38b%3A0x69d1d5751069c11f!2sManila%2C%20Metro%20Manila!3m2!1d14.5995124!2d120.9842195!4m5!1s0x33bd4ff8d5c69bcd%3A0x1d3db2bbf21baadb!2s2F9G%2B9X%20Camp%20Narra%2C%20Candelaria%2C%20Quezon!3m2!1d14.018473199999999!2d121.4774661!5e0!3m2!1sen!2sph!4v1706501863519!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            <a href="https://www.google.com/maps/dir/Manila,+Metro+Manila/2F9G%2B9X+Camp+Narra,+Candelaria,+Quezon/@14.2644955,120.9033825,10z/data=!4m13!4m12!1m5!1m1!1s0x3397ca03571ec38b:0x69d1d5751069c11f!2m2!1d120.9842195!2d14.5995124!1m5!1m1!1s0x33bd4ff8d5c69bcd:0x1d3db2bbf21baadb!2m2!1d121.4774661!2d14.0184732?hl=en&entry=ttu" class="button">
+                View on Google Maps
+            </a>
+            <h3>Camp Narra Quezon</h3>
+            <div class="roww">
+                <div class="column">
+                    <img src="../img/quezon2.jpg" style="width: 100%">
+                </div>
+                <div class="column">
+                    <img src="../img/quezon3.jpg" style="width: 100%">
+                </div>
+            <div class="roww">
+                </div><div class="column">
+                    <img src="../img/quezon1.jpg" style="width: 100%">
+                </div>
+                <div class="column">
+                    <img src="../img/quezon.jpg" style="width: 100%">
+                </div>
+            </div>
+            </div>
+            <footer>
+                2024 Google Maps on Website. All rights reserved
+            </footer>
+
+    </div>
+</div>
+</div>
+
+
+    
+<!-- ... Your existing HTML ... -->
+
+<!-- ... Your existing HTML ... -->
+
+<div class="comments-container">
+    <h2>Comments</h2>
+    <form id="commentForm">
+        <label for="commentAuthor">Name:</label>
+        <input type="text" id="commentAuthor" name="commentAuthor" required>
+
+        <label for="commentContent">Comment:</label>
+        <textarea id="commentContent" name="commentContent" rows="4" required></textarea>
+
+        <button type="submit">Post Comment</button>
+    </form>
+
+    <!-- Display Comments -->
+    <div id="comments"></div>
+</div>
+
+<script>
+    document.getElementById("commentForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        // Get values from the form
+        var author = document.getElementById("commentAuthor").value;
+        var content = document.getElementById("commentContent").value;
+
+        // Create a new comment element
+        var commentElement = document.createElement("div");
+        commentElement.className = "comment";
+        commentElement.innerHTML = '<p class="comment-author">' + author + ':</p><p class="comment-content">' + content + '</p>';
+
+        // Append the comment to the comments container
+        document.getElementById("comments").appendChild(commentElement);
+
+        // Clear the form
+        document.getElementById("commentForm").reset();
+    });
+</script>
+
+
+
+    
+    </div>
+</body>
+</html>
