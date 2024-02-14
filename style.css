@@ -63,7 +63,7 @@ body {
     position: absolute;
     width: 280px;
     transition: .5s;
-    font-color: white;
+    color: white;
 }
 .input-field{
     width: 100%;
